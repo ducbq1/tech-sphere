@@ -35,6 +35,12 @@ const config: Config = {
     [
       "classic",
       {
+        googleAnalytics: {
+          trackingID: "G-7VXKM582H8",
+          anonymizeIP: true, // Ẩn danh IP (nếu cần)
+        },
+      },
+      {
         docs: {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
@@ -65,10 +71,6 @@ const config: Config = {
   ],
 
   themeConfig: {
-    googleAnalytics: {
-      trackingID: "G-7VXKM582H8",
-      anonymizeIP: true, // Ẩn danh IP (nếu cần)
-    },
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
