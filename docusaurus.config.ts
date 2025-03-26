@@ -5,8 +5,8 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
+  title: "Tech Sphere",
+  tagline: "Chia sẻ kỹ thuật công nghệ",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -68,7 +68,7 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "My Site",
+      title: "TechSphere",
       logo: {
         alt: "My Site Logo",
         src: "img/logo.svg",
@@ -78,9 +78,9 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Hướng dẫn",
         },
-        { to: "/blog", label: "Blog", position: "left" },
+        { to: "/blog", label: "Nhật ký", position: "left" },
         {
           href: "https://github.com/facebook/docusaurus",
           label: "GitHub",
@@ -95,13 +95,13 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "Tutorial",
+              label: "Hướng dẫn",
               to: "/docs/intro",
             },
           ],
         },
         {
-          title: "Community",
+          title: "Cộng đồng",
           items: [
             {
               label: "Stack Overflow",
@@ -118,10 +118,10 @@ const config: Config = {
           ],
         },
         {
-          title: "More",
+          title: "Thêm nữa",
           items: [
             {
-              label: "Blog",
+              label: "Nhật ký",
               to: "/blog",
             },
             {
