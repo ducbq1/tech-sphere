@@ -26,5 +26,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3 # Thư viện dùng để deploy lên GitHub Pages
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }} # Token do GitHub tự động tạo
+          github_token: ${{ secrets.PERSONAL_TOKEN }} # Token do GitHub tự động tạo
           publish_dir: ./build # Đường dẫn thư mục chứa file build (mặc định của Docusaurus)
