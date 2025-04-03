@@ -1,8 +1,8 @@
 ---
-slug: long-blog-post
+slug: compare-signer
 title: So sánh RSASSASigner và MACSigner trong Nimbus JOSE + JWT
 authors: yangshun
-tags: [hello, docusaurus]
+tags: [java, docusaurus]
 ---
 This is the summary of a very long blog post,
 
