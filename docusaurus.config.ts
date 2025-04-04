@@ -138,6 +138,16 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+  plugins: [
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        blogTitle: "Nhật ký",
+        blogSidebarTitle: "All posts",
+        postsPerPage: "ALL", // Chỉnh sửa số bài viết gần đây muốn hiển thị
+      },
+    ],
+  ],
 };
 
 export default config;
