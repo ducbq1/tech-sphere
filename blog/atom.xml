@@ -2,11 +2,118 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ducbq1.github.io/tech-sphere/blog</id>
     <title>Tech Sphere Blog</title>
-    <updated>2025-04-04T00:00:00.000Z</updated>
+    <updated>2025-04-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ducbq1.github.io/tech-sphere/blog"/>
     <subtitle>Tech Sphere Blog</subtitle>
     <icon>https://ducbq1.github.io/tech-sphere/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Kiến Thức và Thuật Ngữ Banking Dành Cho Lập Trình Viên]]></title>
+        <id>https://ducbq1.github.io/tech-sphere/blog/banking</id>
+        <link href="https://ducbq1.github.io/tech-sphere/blog/banking"/>
+        <updated>2025-04-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[1. Quầy Giao Dịch (Branch Banking)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-quầy-giao-dịch-branch-banking">1. Quầy Giao Dịch (Branch Banking)<a href="https://ducbq1.github.io/tech-sphere/blog/banking#1-qu%E1%BA%A7y-giao-d%E1%BB%8Bch-branch-banking" class="hash-link" aria-label="Direct link to 1. Quầy Giao Dịch (Branch Banking)" title="Direct link to 1. Quầy Giao Dịch (Branch Banking)">​</a></h2>
+<p>Quầy giao dịch là nơi khách hàng thực hiện các giao dịch trực tiếp với nhân viên ngân hàng. Các giao dịch này có thể bao gồm:</p>
+<ul>
+<li><strong>Nộp tiền</strong> (Deposits)</li>
+<li><strong>Rút tiền</strong> (Withdrawals)</li>
+<li><strong>Chuyển tiền</strong> (Money Transfers)</li>
+<li><strong>Mở tài khoản</strong> (Account Opening)</li>
+<li><strong>Cung cấp thông tin tài khoản</strong> (Account Information)</li>
+<li><strong>Cấp thẻ tín dụng hoặc thẻ ghi nợ</strong> (Credit/Debit Card Issuance)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="các-loại-quầy-giao-dịch">Các loại quầy giao dịch:<a href="https://ducbq1.github.io/tech-sphere/blog/banking#c%C3%A1c-lo%E1%BA%A1i-qu%E1%BA%A7y-giao-d%E1%BB%8Bch" class="hash-link" aria-label="Direct link to Các loại quầy giao dịch:" title="Direct link to Các loại quầy giao dịch:">​</a></h3>
+<ul>
+<li><strong>Quầy giao dịch truyền thống</strong>: Ngân hàng trực tiếp với khách hàng thông qua nhân viên.</li>
+<li><strong>Quầy tự động</strong>: Cung cấp dịch vụ tự động như rút tiền, nộp tiền qua các máy ATM hoặc Kiosk.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-hệ-thống-core-banking">2. Hệ Thống Core Banking<a href="https://ducbq1.github.io/tech-sphere/blog/banking#2-h%E1%BB%87-th%E1%BB%91ng-core-banking" class="hash-link" aria-label="Direct link to 2. Hệ Thống Core Banking" title="Direct link to 2. Hệ Thống Core Banking">​</a></h2>
+<p>Hệ thống <strong>Core Banking</strong> là nền tảng phần mềm dùng để quản lý các giao dịch tài chính cơ bản trong ngân hàng. Đây là hệ thống cốt lõi giúp ngân hàng có thể thực hiện các giao dịch trên toàn quốc hoặc toàn cầu. Các tính năng chính của hệ thống core banking bao gồm:</p>
+<ul>
+<li><strong>Quản lý tài khoản</strong> (Account Management): Theo dõi các tài khoản của khách hàng, số dư tài khoản, và các hoạt động tài chính.</li>
+<li><strong>Xử lý giao dịch</strong> (Transaction Processing): Thực hiện và ghi nhận các giao dịch của khách hàng.</li>
+<li><strong>Quản lý tín dụng</strong> (Loan Management): Quản lý các khoản vay của khách hàng.</li>
+<li><strong>Xử lý thanh toán</strong> (Payment Processing): Cung cấp khả năng thanh toán qua các phương thức khác nhau (chuyển khoản, thẻ, ví điện tử, v.v.).</li>
+<li><strong>Báo cáo và phân tích</strong> (Reporting and Analytics): Cung cấp thông tin về hiệu suất của ngân hàng và các xu hướng tài chính.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="các-thành-phần-trong-hệ-thống-core-banking">Các thành phần trong hệ thống core banking:<a href="https://ducbq1.github.io/tech-sphere/blog/banking#c%C3%A1c-th%C3%A0nh-ph%E1%BA%A7n-trong-h%E1%BB%87-th%E1%BB%91ng-core-banking" class="hash-link" aria-label="Direct link to Các thành phần trong hệ thống core banking:" title="Direct link to Các thành phần trong hệ thống core banking:">​</a></h3>
+<ul>
+<li><strong>ATM Switch</strong>: Hệ thống giúp kết nối các máy ATM và các giao dịch từ các thiết bị ngân hàng khác.</li>
+<li><strong>Payment Gateway</strong>: Nền tảng cho phép xử lý các giao dịch thanh toán trực tuyến.</li>
+<li><strong>Internet Banking</strong>: Hệ thống ngân hàng trực tuyến cho phép khách hàng thực hiện các giao dịch qua web hoặc ứng dụng di động.</li>
+<li><strong>Mobile Banking</strong>: Hệ thống cho phép thực hiện giao dịch qua điện thoại di động.</li>
+<li><strong>Database</strong>: Lưu trữ dữ liệu giao dịch, thông tin khách hàng và các tài khoản.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-các-thuật-ngữ-quan-trọng-trong-ngành-ngân-hàng">3. Các Thuật Ngữ Quan Trọng Trong Ngành Ngân Hàng<a href="https://ducbq1.github.io/tech-sphere/blog/banking#3-c%C3%A1c-thu%E1%BA%ADt-ng%E1%BB%AF-quan-tr%E1%BB%8Dng-trong-ng%C3%A0nh-ng%C3%A2n-h%C3%A0ng" class="hash-link" aria-label="Direct link to 3. Các Thuật Ngữ Quan Trọng Trong Ngành Ngân Hàng" title="Direct link to 3. Các Thuật Ngữ Quan Trọng Trong Ngành Ngân Hàng">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="31-các-loại-tài-khoản">3.1. Các Loại Tài Khoản<a href="https://ducbq1.github.io/tech-sphere/blog/banking#31-c%C3%A1c-lo%E1%BA%A1i-t%C3%A0i-kho%E1%BA%A3n" class="hash-link" aria-label="Direct link to 3.1. Các Loại Tài Khoản" title="Direct link to 3.1. Các Loại Tài Khoản">​</a></h3>
+<ul>
+<li><strong>Tài khoản thanh toán</strong> (Checking Account): Tài khoản dùng để thực hiện các giao dịch thanh toán hàng ngày.</li>
+<li><strong>Tài khoản tiết kiệm</strong> (Savings Account): Tài khoản dùng để tích lũy tiền với lãi suất.</li>
+<li><strong>Tài khoản vãng lai</strong> (Current Account): Tài khoản không có lãi suất, thường dùng cho các doanh nghiệp.</li>
+<li><strong>Tài khoản thẻ tín dụng</strong> (Credit Account): Tài khoản cho phép khách hàng vay tiền từ ngân hàng và trả dần với lãi suất.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="32-các-loại-giao-dịch">3.2. Các Loại Giao Dịch<a href="https://ducbq1.github.io/tech-sphere/blog/banking#32-c%C3%A1c-lo%E1%BA%A1i-giao-d%E1%BB%8Bch" class="hash-link" aria-label="Direct link to 3.2. Các Loại Giao Dịch" title="Direct link to 3.2. Các Loại Giao Dịch">​</a></h3>
+<ul>
+<li><strong>Chuyển khoản</strong> (Transfer): Di chuyển tiền từ một tài khoản sang tài khoản khác.</li>
+<li><strong>Giao dịch rút tiền</strong> (Withdrawal): Rút tiền mặt từ tài khoản.</li>
+<li><strong>Giao dịch nộp tiền</strong> (Deposit): Nộp tiền vào tài khoản ngân hàng.</li>
+<li><strong>Thanh toán hóa đơn</strong> (Bill Payment): Thanh toán tiền cho các dịch vụ như điện, nước, internet.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="33-các-loại-thẻ">3.3. Các Loại Thẻ<a href="https://ducbq1.github.io/tech-sphere/blog/banking#33-c%C3%A1c-lo%E1%BA%A1i-th%E1%BA%BB" class="hash-link" aria-label="Direct link to 3.3. Các Loại Thẻ" title="Direct link to 3.3. Các Loại Thẻ">​</a></h3>
+<ul>
+<li><strong>Thẻ tín dụng</strong> (Credit Card): Thẻ cho phép người dùng vay tiền từ ngân hàng để thanh toán, với điều kiện trả nợ đúng hạn.</li>
+<li><strong>Thẻ ghi nợ</strong> (Debit Card): Thẻ trực tiếp lấy tiền từ tài khoản của người dùng để thực hiện giao dịch.</li>
+<li><strong>Thẻ trả trước</strong> (Prepaid Card): Thẻ không có tài khoản liên kết mà người dùng phải nạp tiền trước để sử dụng.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="34-quản-lý-tín-dụng">3.4. Quản Lý Tín Dụng<a href="https://ducbq1.github.io/tech-sphere/blog/banking#34-qu%E1%BA%A3n-l%C3%BD-t%C3%ADn-d%E1%BB%A5ng" class="hash-link" aria-label="Direct link to 3.4. Quản Lý Tín Dụng" title="Direct link to 3.4. Quản Lý Tín Dụng">​</a></h3>
+<ul>
+<li><strong>Khoản vay</strong> (Loan): Khoản tiền mà ngân hàng cấp cho khách hàng với điều kiện trả lại theo thỏa thuận.</li>
+<li><strong>Hạn mức tín dụng</strong> (Credit Limit): Mức tối đa mà người dùng có thể vay mượn hoặc sử dụng trên thẻ tín dụng.</li>
+<li><strong>Lãi suất</strong> (Interest Rate): Phần trăm phí mà khách hàng phải trả khi vay mượn tiền từ ngân hàng.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-các-công-nghệ-và-thuật-ngữ-liên-quan">4. Các Công Nghệ Và Thuật Ngữ Liên Quan<a href="https://ducbq1.github.io/tech-sphere/blog/banking#4-c%C3%A1c-c%C3%B4ng-ngh%E1%BB%87-v%C3%A0-thu%E1%BA%ADt-ng%E1%BB%AF-li%C3%AAn-quan" class="hash-link" aria-label="Direct link to 4. Các Công Nghệ Và Thuật Ngữ Liên Quan" title="Direct link to 4. Các Công Nghệ Và Thuật Ngữ Liên Quan">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="41-fintech-công-nghệ-tài-chính">4.1. FinTech (Công Nghệ Tài Chính)<a href="https://ducbq1.github.io/tech-sphere/blog/banking#41-fintech-c%C3%B4ng-ngh%E1%BB%87-t%C3%A0i-ch%C3%ADnh" class="hash-link" aria-label="Direct link to 4.1. FinTech (Công Nghệ Tài Chính)" title="Direct link to 4.1. FinTech (Công Nghệ Tài Chính)">​</a></h3>
+<p>FinTech (Financial Technology) là các công nghệ mới giúp cải tiến các dịch vụ tài chính như thanh toán, tín dụng, đầu tư, và bảo hiểm. Các công nghệ FinTech phổ biến hiện nay bao gồm:</p>
+<ul>
+<li><strong>Blockchain</strong>: Công nghệ nền tảng cho tiền điện tử và giao dịch phi tập trung.</li>
+<li><strong>AI trong ngân hàng</strong>: Sử dụng trí tuệ nhân tạo để phân tích dữ liệu tài chính và cung cấp dịch vụ khách hàng.</li>
+<li><strong>Open Banking</strong>: Cho phép các ngân hàng chia sẻ dữ liệu của khách hàng với các bên thứ ba (nếu khách hàng cho phép) để cung cấp dịch vụ tài chính.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="42-payment-systems-hệ-thống-thanh-toán">4.2. Payment Systems (Hệ Thống Thanh Toán)<a href="https://ducbq1.github.io/tech-sphere/blog/banking#42-payment-systems-h%E1%BB%87-th%E1%BB%91ng-thanh-to%C3%A1n" class="hash-link" aria-label="Direct link to 4.2. Payment Systems (Hệ Thống Thanh Toán)" title="Direct link to 4.2. Payment Systems (Hệ Thống Thanh Toán)">​</a></h3>
+<p>Các hệ thống thanh toán giúp xử lý và chuyển tiền giữa các bên. Một số hệ thống thanh toán phổ biến:</p>
+<ul>
+<li><strong>SWIFT</strong>: Mạng thanh toán quốc tế dùng để chuyển tiền giữa các ngân hàng toàn cầu.</li>
+<li><strong>ACH (Automated Clearing House)</strong>: Hệ thống thanh toán tự động cho các giao dịch nội địa ở Mỹ.</li>
+<li><strong>RTGS (Real-Time Gross Settlement)</strong>: Hệ thống thanh toán tức thời giữa các ngân hàng.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="43-security">4.3. Security<a href="https://ducbq1.github.io/tech-sphere/blog/banking#43-security" class="hash-link" aria-label="Direct link to 4.3. Security" title="Direct link to 4.3. Security">​</a></h3>
+<p>Trong lĩnh vực ngân hàng, bảo mật là rất quan trọng. Các công nghệ bảo mật thường gặp bao gồm:</p>
+<ul>
+<li><strong>SSL/TLS</strong>: Các giao thức bảo mật để mã hóa giao tiếp trên web.</li>
+<li><strong>2FA (Two-Factor Authentication)</strong>: Xác thực hai yếu tố để bảo vệ tài khoản người dùng.</li>
+<li><strong>Tokenization</strong>: Công nghệ thay thế thông tin nhạy cảm (như số thẻ tín dụng) bằng một mã định danh duy nhất.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-lập-trình-và-ngân-hàng">5. Lập Trình Và Ngân Hàng<a href="https://ducbq1.github.io/tech-sphere/blog/banking#5-l%E1%BA%ADp-tr%C3%ACnh-v%C3%A0-ng%C3%A2n-h%C3%A0ng" class="hash-link" aria-label="Direct link to 5. Lập Trình Và Ngân Hàng" title="Direct link to 5. Lập Trình Và Ngân Hàng">​</a></h2>
+<p>Lập trình viên làm việc với ngân hàng thường sẽ tương tác với các hệ thống ngân hàng qua các API hoặc giao thức mạng. Các công nghệ và phương pháp mà lập trình viên cần biết bao gồm:</p>
+<ul>
+<li><strong>RESTful APIs</strong>: Để tương tác với các dịch vụ ngân hàng trực tuyến.</li>
+<li><strong>SOAP (Simple Object Access Protocol)</strong>: Giao thức dùng trong các dịch vụ web cho ngân hàng truyền thống.</li>
+<li><strong>OAuth</strong>: Giao thức ủy quyền bảo mật khi sử dụng các dịch vụ ngân hàng của bên thứ ba.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-kết-luận">6. Kết Luận<a href="https://ducbq1.github.io/tech-sphere/blog/banking#6-k%E1%BA%BFt-lu%E1%BA%ADn" class="hash-link" aria-label="Direct link to 6. Kết Luận" title="Direct link to 6. Kết Luận">​</a></h2>
+<p>Hiểu các thuật ngữ và công nghệ trong ngành ngân hàng là rất quan trọng đối với lập trình viên làm việc trong lĩnh vực tài chính. Việc nắm vững những khái niệm cơ bản về hệ thống ngân hàng, giao dịch, bảo mật, và các công nghệ tài chính giúp lập trình viên phát triển các ứng dụng tài chính hiệu quả và an toàn.</p>]]></content>
+        <author>
+            <name>Bùi Quang Đức</name>
+            <uri>https://github.com/ducbq1</uri>
+        </author>
+        <category label="banking" term="banking"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Cài đặt loading con trỏ chuột trong WPF (Windows Presentation Foundation)]]></title>
         <id>https://ducbq1.github.io/tech-sphere/blog/cursor-state</id>
