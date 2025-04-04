@@ -4,6 +4,9 @@ title: Thread tự động retry kết nối tới API nếu bị mất kết n�
 authors: yangshun
 tags: [java, spring boot]
 ---
+<!-- truncate -->
+
+
 # 🚀 `AdvancedApiConnectionRetry.java`
 
 ## Tổng quan

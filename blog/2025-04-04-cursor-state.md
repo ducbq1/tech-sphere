@@ -4,6 +4,9 @@ title: Cài đặt loading con trỏ chuột trong WPF (Windows Presentation Fou
 authors: yangshun
 tags: [dotnet, wpf]
 ---
+<!-- truncate -->
+
+
 ## Sử dụng `Mouse.OverrideCursor` để đặt con trỏ toàn cục
 
 ### Ví dụ 1:
