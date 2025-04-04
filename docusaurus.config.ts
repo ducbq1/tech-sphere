@@ -56,6 +56,8 @@ const config: Config = {
           onInlineTags: "warn",
           onInlineAuthors: "warn",
           onUntruncatedBlogPosts: "warn",
+          postsPerPage: "ALL", // Chỉnh sửa số bài viết gần đây muốn hiển thị,
+          blogSidebarTitle: "Các bài gần đây",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -138,16 +140,6 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
-  plugins: [
-    [
-      "@docusaurus/plugin-content-blog",
-      {
-        blogTitle: "Nhật ký",
-        blogSidebarTitle: "All posts",
-        postsPerPage: "ALL", // Chỉnh sửa số bài viết gần đây muốn hiển thị
-      },
-    ],
-  ],
 };
 
 export default config;
