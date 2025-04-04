@@ -189,6 +189,62 @@
             <category>Docusaurus</category>
         </item>
         <item>
+            <title><![CDATA[Aspect Oriented Programming (AOP)]]></title>
+            <link>https://ducbq1.github.io/tech-sphere/blog/aop</link>
+            <guid>https://ducbq1.github.io/tech-sphere/blog/aop</guid>
+            <pubDate>Sun, 28 May 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[C# 8 (Phát Hành vào 2019)]]></description>
+            <content:encoded><![CDATA[<p><strong>Aspect Oriented Programming (AOP)</strong> – lập trình hướng khía cạnh: là một kỹ thuật lập trình (kiểu như lập trình hướng đối tượng) nhằm phân tách chương trình thành các module riêng biệt, phân biệt, không phụ thuộc nhau. Khi hoạt động, chương trình sẽ kết hợp các module lại để thực hiện các chức năng, nhưng khi sửa đổi một chức năng thì chỉ cần sửa một module.</p>
+<p>AOP không phải dùng để thay thế OOP mà để bổ sung cho OOP.</p>
+<p><strong>Aspect Oriented Programming (AOP)</strong> – lập trình hướng khía cạnh: là một kỹ thuật lập trình (kiểu như lập trình hướng đối tượng) nhằm phân tách chương trình thành các module riêng biệt, phân biệt, không phụ thuộc nhau. Khi hoạt động, chương trình sẽ kết hợp các module lại để thực hiện các chức năng, nhưng khi sửa đổi một chức năng thì chỉ cần sửa một module.</p>
+<p>AOP không phải dùng để thay thế OOP mà để bổ sung cho OOP.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ví-dụ">Ví dụ:<a href="https://ducbq1.github.io/tech-sphere/blog/aop#v%C3%AD-d%E1%BB%A5" class="hash-link" aria-label="Direct link to Ví dụ:" title="Direct link to Ví dụ:">​</a></h2>
+<ol>
+<li>
+<p><strong>Công ty và các phòng ban:</strong></p>
+<p>Một công ty được chia thành nhiều phòng ban như phòng kỹ thuật, phòng kế toán, phòng kinh doanh (mỗi phòng giống như một module trong chương trình). Mỗi phòng thực hiện một nhiệm vụ riêng, nhưng cần kết hợp lại để vận hành công ty.</p>
+<ul>
+<li>Trong AOP có khái niệm "lát cắt", "điểm cắt", tạm hiểu là module A sẽ xen vào module B để thực hiện một chức năng nào đó mà không làm ảnh hưởng module B. "Điểm cắt" là vị trí mà module A xen vào module B.</li>
+</ul>
+<p>Ví dụ: Tất cả nhân viên đều cần phải quyết toán thuế. Nếu từng người một thực hiện, sẽ tốn thời gian và ảnh hưởng tới công ty. Phòng kế toán sẽ thực hiện quyết toán cho tất cả nhân viên. Nếu luật thuế thay đổi, phòng kế toán chỉ cần sửa lại mà không ảnh hưởng đến các phòng ban khác.</p>
+</li>
+<li>
+<p><strong>Viết log trong code:</strong></p>
+<p>Trong code, bạn thường thực hiện viết log cho các method (ví dụ: method nào chạy, lỗi gì xảy ra). Việc viết log không liên quan đến chức năng của method.</p>
+<ul>
+<li>Giờ yêu cầu chuyển sang chỉ viết log khi bắt đầu các method, bạn phải sửa tất cả các method đó. Với AOP, bạn có thể phân tách chức năng log ra thành một module riêng và sử dụng nó để thực hiện các lát cắt với các method cần log.</li>
+<li>Ví dụ: Bạn có thể log ở đầu method hoặc cuối method, tùy vào điểm cắt bạn chọn.</li>
+</ul>
+</li>
+<li>
+<p><strong>Filter trong lập trình web:</strong></p>
+<p>Trong lập trình web, <strong>filter</strong> là một khái niệm dùng để xử lý tất cả các request.</p>
+<ul>
+<li>Ví dụ: Mỗi request cần xác thực (kiểm tra login). Bạn có thể sử dụng một filter để thực hiện xác thực và nếu cần thay đổi cách xác thực, bạn chỉ cần sửa filter mà không ảnh hưởng đến các phần khác của hệ thống.</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="các-thuật-ngữ-trong-aop">Các thuật ngữ trong AOP:<a href="https://ducbq1.github.io/tech-sphere/blog/aop#c%C3%A1c-thu%E1%BA%ADt-ng%E1%BB%AF-trong-aop" class="hash-link" aria-label="Direct link to Các thuật ngữ trong AOP:" title="Direct link to Các thuật ngữ trong AOP:">​</a></h2>
+<ul>
+<li><strong>Core Concern / Primary Concern:</strong> Là yêu cầu hoặc logic xử lý chính của chương trình.</li>
+<li><strong>Cross-Cutting Concern:</strong> Những logic phụ cần được thực hiện khi core concern được gọi, như security, logging, tracing, monitoring, access control, error handling, transaction management, session management, input/output validation, ...</li>
+<li><strong>Joinpoint:</strong> Là một điểm trong chương trình, nơi có thể chèn các cross-cutting concern. Ví dụ: Sau khi chạy một method, ta muốn ghi log, thì điểm sau khi method thực thi là một joinpoint.</li>
+<li><strong>Pointcut:</strong> Là cách xác định Joinpoint, sử dụng biểu thức để kiểm tra và xác định xem liệu <strong>Advice</strong> có cần thực thi hay không.</li>
+<li><strong>Advice:</strong> Các xử lý phụ được thêm vào xử lý chính. Các loại <strong>Advice</strong>:<!-- -->
+<ul>
+<li><strong>Before:</strong> Thực thi trước Joinpoint.</li>
+<li><strong>After:</strong> Thực thi sau Joinpoint.</li>
+<li><strong>Around:</strong> Thực thi trước và sau Joinpoint.</li>
+<li><strong>After Returning:</strong> Thực thi sau khi Joinpoint hoàn thành bình thường.</li>
+<li><strong>After Throwing:</strong> Thực thi sau khi Joinpoint kết thúc với một Exception.</li>
+</ul>
+</li>
+<li><strong>Aspect:</strong> Tương tự như một Java class. Aspect đóng gói toàn bộ cross-cutting concern và có thể chứa JoinPoint, PointCut, và Advice.</li>
+<li><strong>Target Object:</strong> Là đối tượng mà <strong>Advice</strong> được áp dụng vào.</li>
+</ul>]]></content:encoded>
+            <category>csharp</category>
+        </item>
+        <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://ducbq1.github.io/tech-sphere/blog/welcome</link>
             <guid>https://ducbq1.github.io/tech-sphere/blog/welcome</guid>
