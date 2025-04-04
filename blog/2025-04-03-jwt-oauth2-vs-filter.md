@@ -1,7 +1,7 @@
 ---
 slug: jwt-oauth2-vs-filter
 title: So sánh OAuth2 JWT và JWT Filter
-authors: yangshun
+authors: ducbq1
 tags: [java, spring boot]
 ---
 <!-- truncate -->

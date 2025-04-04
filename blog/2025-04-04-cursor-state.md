@@ -1,7 +1,7 @@
 ---
 slug: cursor-state
 title: Cài đặt loading con trỏ chuột trong WPF (Windows Presentation Foundation)
-authors: yangshun
+authors: ducbq1
 tags: [dotnet, wpf]
 ---
 <!-- truncate -->

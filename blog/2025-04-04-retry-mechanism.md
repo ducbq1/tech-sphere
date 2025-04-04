@@ -1,7 +1,7 @@
 ---
 slug: retry-mechanism
 title: Thread tự động retry kết nối tới API nếu bị mất kết nối
-authors: yangshun
+authors: ducbq1
 tags: [java, spring boot]
 ---
 <!-- truncate -->

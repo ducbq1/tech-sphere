@@ -8,6 +8,16 @@ yangshun:
     x: yangshunz
     github: yangshun
 
+ducbq1:
+  name: Bùi Quang Đức
+  title: CV phát triển ứng dụng | P.PTUD giao dịch CN & QTNB - Trụ sở chính VietinBank
+  url: https://github.com/ducbq1
+  image_url: avatar/ducbq1.jpg
+  page: true
+  socials:
+    x: ducbq1
+    github: ducbq1
+
 slorber:
   name: Sébastien Lorber
   title: Docusaurus maintainer
@@ -15,7 +25,7 @@ slorber:
   image_url: https://github.com/slorber.png
   page:
     # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
+    permalink: "/all-sebastien-lorber-articles"
   socials:
     x: sebastienlorber
     linkedin: sebastienlorber

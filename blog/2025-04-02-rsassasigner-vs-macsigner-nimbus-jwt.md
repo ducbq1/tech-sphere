@@ -1,10 +1,9 @@
 ---
 slug: rsassasigner-vs-macsigner-nimbus-jwt
 title: So sánh RSASSASigner và MACSigner trong Nimbus JOSE + JWT
-authors: yangshun
+authors: ducbq1
 tags: [java, spring boot]
 ---
-
 <!-- truncate -->
 
 # So sánh RSASSASigner và MACSigner trong Nimbus JOSE + JWT
