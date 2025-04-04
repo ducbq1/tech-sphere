@@ -1,10 +1,9 @@
 ---
 slug: cursor-state
-title: Trong WPF (Windows Presentation Foundation), để thay đổi cursor (con trỏ chuột), bạn có thể sử dụng thuộc tính Mouse.OverrideCursor hoặc FrameworkElement.Cursor
+title: Cài đặt loading con trỏ chuột trong WPF (Windows Presentation Foundation)
 authors: yangshun
 tags: [dotnet, wpf]
 ---
-
 ## Sử dụng `Mouse.OverrideCursor` để đặt con trỏ toàn cục
 
 ### Ví dụ 1:

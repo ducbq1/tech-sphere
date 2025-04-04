@@ -1,10 +1,9 @@
 ---
 slug: retry-mechanism
-title: Dưới đây là ví dụ đơn giản bằng Java về cách tạo một thread tự động retry kết nối tới API nếu bị mất kết nối
+title: Thread tự động retry kết nối tới API nếu bị mất kết nối
 authors: yangshun
 tags: [java, spring boot]
 ---
-
 # 🚀 `AdvancedApiConnectionRetry.java`
 
 ## Tổng quan

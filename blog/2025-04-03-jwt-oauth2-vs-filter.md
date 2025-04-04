@@ -4,7 +4,7 @@ title: So sánh OAuth2 JWT và JWT Filter
 authors: yangshun
 tags: [java, spring boot]
 ---
-This is the summary of a very long blog post,
+<!-- truncate -->
 
 ## So sánh OAuth2 JWT và JWT Filter
 
