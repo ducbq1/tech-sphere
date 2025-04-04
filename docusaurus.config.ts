@@ -56,7 +56,7 @@ const config: Config = {
           onInlineTags: "warn",
           onInlineAuthors: "warn",
           onUntruncatedBlogPosts: "warn",
-          postsPerPage: "ALL", // Chỉnh sửa số bài viết gần đây muốn hiển thị,
+          blogSidebarCount: "ALL", // Chỉnh sửa số bài viết gần đây muốn hiển thị,
           blogSidebarTitle: "Các bài gần đây",
         },
         theme: {
