@@ -189,59 +189,140 @@
             <category>Docusaurus</category>
         </item>
         <item>
-            <title><![CDATA[Aspect Oriented Programming (AOP)]]></title>
-            <link>https://ducbq1.github.io/tech-sphere/blog/aop</link>
-            <guid>https://ducbq1.github.io/tech-sphere/blog/aop</guid>
+            <title><![CDATA[Những Tính Năng Mới Trong C# Từ Phiên Bản 8 Đến 12]]></title>
+            <link>https://ducbq1.github.io/tech-sphere/blog/csharp</link>
+            <guid>https://ducbq1.github.io/tech-sphere/blog/csharp</guid>
             <pubDate>Sun, 28 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[C# 8 (Phát Hành vào 2019)]]></description>
-            <content:encoded><![CDATA[<p><strong>Aspect Oriented Programming (AOP)</strong> – lập trình hướng khía cạnh: là một kỹ thuật lập trình (kiểu như lập trình hướng đối tượng) nhằm phân tách chương trình thành các module riêng biệt, phân biệt, không phụ thuộc nhau. Khi hoạt động, chương trình sẽ kết hợp các module lại để thực hiện các chức năng, nhưng khi sửa đổi một chức năng thì chỉ cần sửa một module.</p>
-<p>AOP không phải dùng để thay thế OOP mà để bổ sung cho OOP.</p>
-<p><strong>Aspect Oriented Programming (AOP)</strong> – lập trình hướng khía cạnh: là một kỹ thuật lập trình (kiểu như lập trình hướng đối tượng) nhằm phân tách chương trình thành các module riêng biệt, phân biệt, không phụ thuộc nhau. Khi hoạt động, chương trình sẽ kết hợp các module lại để thực hiện các chức năng, nhưng khi sửa đổi một chức năng thì chỉ cần sửa một module.</p>
-<p>AOP không phải dùng để thay thế OOP mà để bổ sung cho OOP.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ví-dụ">Ví dụ:<a href="https://ducbq1.github.io/tech-sphere/blog/aop#v%C3%AD-d%E1%BB%A5" class="hash-link" aria-label="Direct link to Ví dụ:" title="Direct link to Ví dụ:">​</a></h2>
-<ol>
-<li>
-<p><strong>Công ty và các phòng ban:</strong></p>
-<p>Một công ty được chia thành nhiều phòng ban như phòng kỹ thuật, phòng kế toán, phòng kinh doanh (mỗi phòng giống như một module trong chương trình). Mỗi phòng thực hiện một nhiệm vụ riêng, nhưng cần kết hợp lại để vận hành công ty.</p>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="c-8-phát-hành-vào-2019">C# 8 (Phát Hành vào 2019)<a href="https://ducbq1.github.io/tech-sphere/blog/csharp#c-8-ph%C3%A1t-h%C3%A0nh-v%C3%A0o-2019" class="hash-link" aria-label="Direct link to C# 8 (Phát Hành vào 2019)" title="Direct link to C# 8 (Phát Hành vào 2019)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-nullable-reference-types">1. <strong>Nullable Reference Types</strong><a href="https://ducbq1.github.io/tech-sphere/blog/csharp#1-nullable-reference-types" class="hash-link" aria-label="Direct link to 1-nullable-reference-types" title="Direct link to 1-nullable-reference-types">​</a></h3>
 <ul>
-<li>Trong AOP có khái niệm "lát cắt", "điểm cắt", tạm hiểu là module A sẽ xen vào module B để thực hiện một chức năng nào đó mà không làm ảnh hưởng module B. "Điểm cắt" là vị trí mà module A xen vào module B.</li>
+<li>C# 8 giới thiệu kiểu dữ liệu tham chiếu nullable, giúp giảm thiểu lỗi NullReferenceException.</li>
+<li>Bạn có thể khai báo kiểu nullable bằng cách sử dụng dấu <code>?</code>, ví dụ: <code>string?</code>.</li>
 </ul>
-<p>Ví dụ: Tất cả nhân viên đều cần phải quyết toán thuế. Nếu từng người một thực hiện, sẽ tốn thời gian và ảnh hưởng tới công ty. Phòng kế toán sẽ thực hiện quyết toán cho tất cả nhân viên. Nếu luật thuế thay đổi, phòng kế toán chỉ cần sửa lại mà không ảnh hưởng đến các phòng ban khác.</p>
-</li>
-<li>
-<p><strong>Viết log trong code:</strong></p>
-<p>Trong code, bạn thường thực hiện viết log cho các method (ví dụ: method nào chạy, lỗi gì xảy ra). Việc viết log không liên quan đến chức năng của method.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-async-streams">2. <strong>Async Streams</strong><a href="https://ducbq1.github.io/tech-sphere/blog/csharp#2-async-streams" class="hash-link" aria-label="Direct link to 2-async-streams" title="Direct link to 2-async-streams">​</a></h3>
 <ul>
-<li>Giờ yêu cầu chuyển sang chỉ viết log khi bắt đầu các method, bạn phải sửa tất cả các method đó. Với AOP, bạn có thể phân tách chức năng log ra thành một module riêng và sử dụng nó để thực hiện các lát cắt với các method cần log.</li>
-<li>Ví dụ: Bạn có thể log ở đầu method hoặc cuối method, tùy vào điểm cắt bạn chọn.</li>
+<li>C# 8 hỗ trợ <code>IAsyncEnumerable</code> và <code>await foreach</code>, cho phép xử lý các stream bất đồng bộ.</li>
+<li>Ví dụ:<!-- -->
+<div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">await foreach (var item in GetDataAsync())</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Console.WriteLine(item);</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
 </ul>
-</li>
-<li>
-<p><strong>Filter trong lập trình web:</strong></p>
-<p>Trong lập trình web, <strong>filter</strong> là một khái niệm dùng để xử lý tất cả các request.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-switch-expressions">3. <strong>Switch Expressions</strong><a href="https://ducbq1.github.io/tech-sphere/blog/csharp#3-switch-expressions" class="hash-link" aria-label="Direct link to 3-switch-expressions" title="Direct link to 3-switch-expressions">​</a></h3>
 <ul>
-<li>Ví dụ: Mỗi request cần xác thực (kiểm tra login). Bạn có thể sử dụng một filter để thực hiện xác thực và nếu cần thay đổi cách xác thực, bạn chỉ cần sửa filter mà không ảnh hưởng đến các phần khác của hệ thống.</li>
+<li>Cung cấp cú pháp ngắn gọn và mạnh mẽ hơn để thực hiện phép so sánh trong switch.</li>
+<li>Ví dụ:<!-- -->
+<div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">var result = x switch</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    1 =&gt; "One",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    2 =&gt; "Two",</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    _ =&gt; "Unknown"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">};</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
 </ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-range-and-index">4. <strong>Range and Index</strong><a href="https://ducbq1.github.io/tech-sphere/blog/csharp#4-range-and-index" class="hash-link" aria-label="Direct link to 4-range-and-index" title="Direct link to 4-range-and-index">​</a></h3>
+<ul>
+<li>Cung cấp kiểu <code>Range</code> và <code>Index</code> để làm việc với các dãy và các chỉ số trong mảng hoặc chuỗi dễ dàng hơn.</li>
+<li>Ví dụ:<!-- -->
+<div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">var array = new int[] { 1, 2, 3, 4, 5 };</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">var subArray = array[1..3]; // [2, 3]</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 </li>
-</ol>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="các-thuật-ngữ-trong-aop">Các thuật ngữ trong AOP:<a href="https://ducbq1.github.io/tech-sphere/blog/aop#c%C3%A1c-thu%E1%BA%ADt-ng%E1%BB%AF-trong-aop" class="hash-link" aria-label="Direct link to Các thuật ngữ trong AOP:" title="Direct link to Các thuật ngữ trong AOP:">​</a></h2>
-<ul>
-<li><strong>Core Concern / Primary Concern:</strong> Là yêu cầu hoặc logic xử lý chính của chương trình.</li>
-<li><strong>Cross-Cutting Concern:</strong> Những logic phụ cần được thực hiện khi core concern được gọi, như security, logging, tracing, monitoring, access control, error handling, transaction management, session management, input/output validation, ...</li>
-<li><strong>Joinpoint:</strong> Là một điểm trong chương trình, nơi có thể chèn các cross-cutting concern. Ví dụ: Sau khi chạy một method, ta muốn ghi log, thì điểm sau khi method thực thi là một joinpoint.</li>
-<li><strong>Pointcut:</strong> Là cách xác định Joinpoint, sử dụng biểu thức để kiểm tra và xác định xem liệu <strong>Advice</strong> có cần thực thi hay không.</li>
-<li><strong>Advice:</strong> Các xử lý phụ được thêm vào xử lý chính. Các loại <strong>Advice</strong>:<!-- -->
-<ul>
-<li><strong>Before:</strong> Thực thi trước Joinpoint.</li>
-<li><strong>After:</strong> Thực thi sau Joinpoint.</li>
-<li><strong>Around:</strong> Thực thi trước và sau Joinpoint.</li>
-<li><strong>After Returning:</strong> Thực thi sau khi Joinpoint hoàn thành bình thường.</li>
-<li><strong>After Throwing:</strong> Thực thi sau khi Joinpoint kết thúc với một Exception.</li>
 </ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-default-interface-methods">5. <strong>Default Interface Methods</strong><a href="https://ducbq1.github.io/tech-sphere/blog/csharp#5-default-interface-methods" class="hash-link" aria-label="Direct link to 5-default-interface-methods" title="Direct link to 5-default-interface-methods">​</a></h3>
+<ul>
+<li>Cho phép thêm phương thức mặc định vào giao diện, giúp dễ dàng thêm tính năng mới vào giao diện mà không phá vỡ mã nguồn hiện có.</li>
+<li>Ví dụ:<!-- -->
+<div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">public interface IExample</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    void Method1();</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    void Method2() =&gt; Console.WriteLine("Default implementation");</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 </li>
-<li><strong>Aspect:</strong> Tương tự như một Java class. Aspect đóng gói toàn bộ cross-cutting concern và có thể chứa JoinPoint, PointCut, và Advice.</li>
-<li><strong>Target Object:</strong> Là đối tượng mà <strong>Advice</strong> được áp dụng vào.</li>
-</ul>]]></content:encoded>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="c-9-phát-hành-vào-2020">C# 9 (Phát Hành vào 2020)<a href="https://ducbq1.github.io/tech-sphere/blog/csharp#c-9-ph%C3%A1t-h%C3%A0nh-v%C3%A0o-2020" class="hash-link" aria-label="Direct link to C# 9 (Phát Hành vào 2020)" title="Direct link to C# 9 (Phát Hành vào 2020)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-records">1. <strong>Records</strong><a href="https://ducbq1.github.io/tech-sphere/blog/csharp#1-records" class="hash-link" aria-label="Direct link to 1-records" title="Direct link to 1-records">​</a></h3>
+<ul>
+<li>Cung cấp kiểu <code>record</code> để tạo các lớp bất biến, giúp dễ dàng tạo các đối tượng với các thuộc tính không thay đổi.</li>
+<li>Ví dụ:<!-- -->
+<div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">public record Person(string Name, int Age);</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-init-only-properties">2. <strong>Init-only Properties</strong><a href="https://ducbq1.github.io/tech-sphere/blog/csharp#2-init-only-properties" class="hash-link" aria-label="Direct link to 2-init-only-properties" title="Direct link to 2-init-only-properties">​</a></h3>
+<ul>
+<li>Cho phép khai báo thuộc tính chỉ có thể được gán giá trị một lần trong quá trình khởi tạo đối tượng.</li>
+<li>Ví dụ:<!-- -->
+<div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">public class Person</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    public string Name { get; init; }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-covariant-returns">3. <strong>Covariant Returns</strong><a href="https://ducbq1.github.io/tech-sphere/blog/csharp#3-covariant-returns" class="hash-link" aria-label="Direct link to 3-covariant-returns" title="Direct link to 3-covariant-returns">​</a></h3>
+<ul>
+<li>Hỗ trợ việc thay đổi kiểu trả về trong lớp kế thừa, miễn là kiểu trả về là một kiểu con của kiểu trả về trong lớp cơ sở.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-pattern-matching-enhancements">4. <strong>Pattern Matching Enhancements</strong><a href="https://ducbq1.github.io/tech-sphere/blog/csharp#4-pattern-matching-enhancements" class="hash-link" aria-label="Direct link to 4-pattern-matching-enhancements" title="Direct link to 4-pattern-matching-enhancements">​</a></h3>
+<ul>
+<li>Cải thiện khả năng so khớp mẫu với <code>and</code>, <code>or</code>, và <code>not</code>.</li>
+<li>Ví dụ:<!-- -->
+<div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">if (obj is int or double) { ... }</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="c-10-phát-hành-vào-2021">C# 10 (Phát Hành vào 2021)<a href="https://ducbq1.github.io/tech-sphere/blog/csharp#c-10-ph%C3%A1t-h%C3%A0nh-v%C3%A0o-2021" class="hash-link" aria-label="Direct link to C# 10 (Phát Hành vào 2021)" title="Direct link to C# 10 (Phát Hành vào 2021)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-global-using-directives">1. <strong>Global Using Directives</strong><a href="https://ducbq1.github.io/tech-sphere/blog/csharp#1-global-using-directives" class="hash-link" aria-label="Direct link to 1-global-using-directives" title="Direct link to 1-global-using-directives">​</a></h3>
+<ul>
+<li>Cung cấp khả năng khai báo các <code>using</code> toàn cục, giúp giảm thiểu việc khai báo <code>using</code> nhiều lần trong mỗi file.</li>
+<li>Ví dụ:<!-- -->
+<div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">global using System;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">global using MyNamespace;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-file-scoped-namespace">2. <strong>File-scoped Namespace</strong><a href="https://ducbq1.github.io/tech-sphere/blog/csharp#2-file-scoped-namespace" class="hash-link" aria-label="Direct link to 2-file-scoped-namespace" title="Direct link to 2-file-scoped-namespace">​</a></h3>
+<ul>
+<li>Giảm bớt mức độ lồng vào các namespace bằng cách sử dụng <code>namespace</code> ở mức file.</li>
+<li>Ví dụ:<!-- -->
+<div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">namespace MyNamespace;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-improved-lambda-expressions">3. <strong>Improved Lambda Expressions</strong><a href="https://ducbq1.github.io/tech-sphere/blog/csharp#3-improved-lambda-expressions" class="hash-link" aria-label="Direct link to 3-improved-lambda-expressions" title="Direct link to 3-improved-lambda-expressions">​</a></h3>
+<ul>
+<li>Cải tiến cú pháp lambda với khả năng khai báo loại trả về rõ ràng.</li>
+<li>Ví dụ:<!-- -->
+<div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Func&lt;int, int, int&gt; add = (x, y) =&gt; x + y;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="c-11-phát-hành-vào-2022">C# 11 (Phát Hành vào 2022)<a href="https://ducbq1.github.io/tech-sphere/blog/csharp#c-11-ph%C3%A1t-h%C3%A0nh-v%C3%A0o-2022" class="hash-link" aria-label="Direct link to C# 11 (Phát Hành vào 2022)" title="Direct link to C# 11 (Phát Hành vào 2022)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-list-patterns">1. <strong>List Patterns</strong><a href="https://ducbq1.github.io/tech-sphere/blog/csharp#1-list-patterns" class="hash-link" aria-label="Direct link to 1-list-patterns" title="Direct link to 1-list-patterns">​</a></h3>
+<ul>
+<li>Hỗ trợ các mẫu danh sách để kiểm tra các thuộc tính trong một danh sách hoặc mảng.</li>
+<li>Ví dụ:<!-- -->
+<div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">if (myArray is [1, 2, ..])</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    // Match for an array starting with 1, followed by 2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-required-members">2. <strong>Required Members</strong><a href="https://ducbq1.github.io/tech-sphere/blog/csharp#2-required-members" class="hash-link" aria-label="Direct link to 2-required-members" title="Direct link to 2-required-members">​</a></h3>
+<ul>
+<li>Cung cấp từ khóa <code>required</code> để yêu cầu các thuộc tính phải được gán giá trị trong quá trình khởi tạo đối tượng.</li>
+<li>Ví dụ:<!-- -->
+<div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">public class Person</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    public required string Name { get; set; }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-utf-8-string-literals">3. <strong>UTF-8 String Literals</strong><a href="https://ducbq1.github.io/tech-sphere/blog/csharp#3-utf-8-string-literals" class="hash-link" aria-label="Direct link to 3-utf-8-string-literals" title="Direct link to 3-utf-8-string-literals">​</a></h3>
+<ul>
+<li>Hỗ trợ khai báo chuỗi có mã hóa UTF-8 trực tiếp trong mã nguồn.</li>
+<li>Ví dụ:<!-- -->
+<div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">var utf8String = u8"Hello, World!";</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="c-12-phát-hành-vào-2023">C# 12 (Phát Hành vào 2023)<a href="https://ducbq1.github.io/tech-sphere/blog/csharp#c-12-ph%C3%A1t-h%C3%A0nh-v%C3%A0o-2023" class="hash-link" aria-label="Direct link to C# 12 (Phát Hành vào 2023)" title="Direct link to C# 12 (Phát Hành vào 2023)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-primary-constructor-for-non-record-types">1. <strong>Primary Constructor for Non-Record Types</strong><a href="https://ducbq1.github.io/tech-sphere/blog/csharp#1-primary-constructor-for-non-record-types" class="hash-link" aria-label="Direct link to 1-primary-constructor-for-non-record-types" title="Direct link to 1-primary-constructor-for-non-record-types">​</a></h3>
+<ul>
+<li>Cho phép sử dụng constructor chính trong các lớp không phải record.</li>
+<li>Ví dụ:<!-- -->
+<div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">public class Person(string name, int age)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    public void Print() =&gt; Console.WriteLine($"{name}, {age}");</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-improved-static-abstract-members">2. <strong>Improved Static Abstract Members</strong><a href="https://ducbq1.github.io/tech-sphere/blog/csharp#2-improved-static-abstract-members" class="hash-link" aria-label="Direct link to 2-improved-static-abstract-members" title="Direct link to 2-improved-static-abstract-members">​</a></h3>
+<ul>
+<li>Cho phép sử dụng các thành viên tĩnh trừu tượng trong giao diện.</li>
+<li>Ví dụ:<!-- -->
+<div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">public interface IShape</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    static abstract double Area { get; }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-enhanced-pattern-matching">3. <strong>Enhanced Pattern Matching</strong><a href="https://ducbq1.github.io/tech-sphere/blog/csharp#3-enhanced-pattern-matching" class="hash-link" aria-label="Direct link to 3-enhanced-pattern-matching" title="Direct link to 3-enhanced-pattern-matching">​</a></h3>
+<ul>
+<li>Mở rộng khả năng so khớp mẫu với các điều kiện phức tạp hơn, chẳng hạn như việc kết hợp các loại đối tượng khác nhau.</li>
+</ul>
+<hr>
+<p>Tóm lại, C# đã liên tục cải tiến và bổ sung những tính năng mới giúp tăng cường khả năng lập trình, bảo mật, và khả năng mở rộng trong suốt các phiên bản từ C# 8 đến C# 12.</p>]]></content:encoded>
             <category>csharp</category>
         </item>
         <item>
