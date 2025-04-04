@@ -22,8 +22,8 @@
 <p>Lưu ý: <code>Mouse.OverrideCursor = null</code> sẽ <strong>trả về con trỏ mặc định</strong>.</p>
 </blockquote>]]></content>
         <author>
-            <name>Yangshun Tay</name>
-            <uri>https://github.com/yangshun</uri>
+            <name>Bùi Quang Đức</name>
+            <uri>https://github.com/ducbq1</uri>
         </author>
         <category label="dotnet" term="dotnet"/>
         <category label="wpf" term="wpf"/>
@@ -71,8 +71,8 @@
 <li>Ghi log chi tiết hơn hoặc gửi alert khi <code>onMaxRetryReached</code>.</li>
 </ul>]]></content>
         <author>
-            <name>Yangshun Tay</name>
-            <uri>https://github.com/yangshun</uri>
+            <name>Bùi Quang Đức</name>
+            <uri>https://github.com/ducbq1</uri>
         </author>
         <category label="java" term="java"/>
         <category label="spring boot" term="spring boot"/>
@@ -98,8 +98,8 @@
 <li>Không cần đối tượng OAuth2 Server</li>
 </ul>]]></content>
         <author>
-            <name>Yangshun Tay</name>
-            <uri>https://github.com/yangshun</uri>
+            <name>Bùi Quang Đức</name>
+            <uri>https://github.com/ducbq1</uri>
         </author>
         <category label="java" term="java"/>
         <category label="spring boot" term="spring boot"/>
@@ -140,8 +140,8 @@
 <li><strong>MACSigner</strong> nhanh hơn nhưng kém an toàn vì khóa bí mật phải được chia sẻ giữa các bên tham gia.</li>
 </ul>]]></content>
         <author>
-            <name>Yangshun Tay</name>
-            <uri>https://github.com/yangshun</uri>
+            <name>Bùi Quang Đức</name>
+            <uri>https://github.com/ducbq1</uri>
         </author>
         <category label="java" term="java"/>
         <category label="spring boot" term="spring boot"/>
