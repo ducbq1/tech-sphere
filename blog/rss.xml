@@ -9,7 +9,7 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Trong WPF (Windows Presentation Foundation), để thay đổi cursor (con trỏ chuột), bạn có thể sử dụng thuộc tính Mouse.OverrideCursor hoặc FrameworkElement.Cursor]]></title>
+            <title><![CDATA[Cài đặt loading con trỏ chuột trong WPF (Windows Presentation Foundation)]]></title>
             <link>https://ducbq1.github.io/tech-sphere/blog/cursor-state</link>
             <guid>https://ducbq1.github.io/tech-sphere/blog/cursor-state</guid>
             <pubDate>Fri, 04 Apr 2025 00:00:00 GMT</pubDate>
@@ -26,7 +26,7 @@
             <category>wpf</category>
         </item>
         <item>
-            <title><![CDATA[Dưới đây là ví dụ đơn giản bằng Java về cách tạo một thread tự động retry kết nối tới API nếu bị mất kết nối]]></title>
+            <title><![CDATA[Thread tự động retry kết nối tới API nếu bị mất kết nối]]></title>
             <link>https://ducbq1.github.io/tech-sphere/blog/retry-mechanism</link>
             <guid>https://ducbq1.github.io/tech-sphere/blog/retry-mechanism</guid>
             <pubDate>Fri, 04 Apr 2025 00:00:00 GMT</pubDate>
@@ -75,9 +75,8 @@
             <link>https://ducbq1.github.io/tech-sphere/blog/jwt-oauth2-vs-filter</link>
             <guid>https://ducbq1.github.io/tech-sphere/blog/jwt-oauth2-vs-filter</guid>
             <pubDate>Thu, 03 Apr 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is the summary of a very long blog post,]]></description>
-            <content:encoded><![CDATA[<p>This is the summary of a very long blog post,</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="so-sánh-oauth2-jwt-và-jwt-filter">So sánh OAuth2 JWT và JWT Filter<a href="https://ducbq1.github.io/tech-sphere/blog/jwt-oauth2-vs-filter#so-s%C3%A1nh-oauth2-jwt-v%C3%A0-jwt-filter" class="hash-link" aria-label="Direct link to So sánh OAuth2 JWT và JWT Filter" title="Direct link to So sánh OAuth2 JWT và JWT Filter">​</a></h2>
+            <description><![CDATA[So sánh OAuth2 JWT và JWT Filter]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="so-sánh-oauth2-jwt-và-jwt-filter">So sánh OAuth2 JWT và JWT Filter<a href="https://ducbq1.github.io/tech-sphere/blog/jwt-oauth2-vs-filter#so-s%C3%A1nh-oauth2-jwt-v%C3%A0-jwt-filter" class="hash-link" aria-label="Direct link to So sánh OAuth2 JWT và JWT Filter" title="Direct link to So sánh OAuth2 JWT và JWT Filter">​</a></h2>
 <table><thead><tr><th>Tiêu chí</th><th>OAuth2 JWT</th><th>JWT Filter</th></tr></thead><tbody><tr><td><strong>Khái niệm</strong></td><td>Sử dụng OAuth2 với JWT để quản lý xác thực &amp; phân quyền</td><td>Sử dụng filter tuỳ chỉ để xử lý JWT trong request</td></tr><tr><td><strong>Quy trình xác thực</strong></td><td>OAuth2 flow (password, client credentials, etc.)</td><td>Kiểm tra JWT trong request header</td></tr><tr><td><strong>Phân quyền</strong></td><td>Dựa trên scopes, roles trong JWT</td><td>Dựa trên claims trong JWT</td></tr><tr><td><strong>Cơ chế hoạt động</strong></td><td>Spring Security OAuth2</td><td>Filter trong Spring Security</td></tr><tr><td><strong>Cơ chế cấp token</strong></td><td>OAuth2 Authorization Server</td><td>Token được tạo ở backend và gửi client</td></tr><tr><td><strong>Tính mở rộng</strong></td><td>Tích hợp dễ dàng với OAuth2 Providers</td><td>Tùy chỉnh linh hoạt</td></tr><tr><td><strong>Tính an toàn</strong></td><td>Bảo mật cao hơn nhờ flow chuẩn và revocation</td><td>Dễ dàng implement nhưng có nguy cơ bị compromise</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="khi-nào-nên-sử-dụng-oauth2-jwt">Khi nào nên sử dụng OAuth2 JWT?<a href="https://ducbq1.github.io/tech-sphere/blog/jwt-oauth2-vs-filter#khi-n%C3%A0o-n%C3%AAn-s%E1%BB%AD-d%E1%BB%A5ng-oauth2-jwt" class="hash-link" aria-label="Direct link to Khi nào nên sử dụng OAuth2 JWT?" title="Direct link to Khi nào nên sử dụng OAuth2 JWT?">​</a></h3>
 <ul>
@@ -99,10 +98,8 @@
             <link>https://ducbq1.github.io/tech-sphere/blog/rsassasigner-vs-macsigner-nimbus-jwt</link>
             <guid>https://ducbq1.github.io/tech-sphere/blog/rsassasigner-vs-macsigner-nimbus-jwt</guid>
             <pubDate>Wed, 02 Apr 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is the summary of a very long blog post,]]></description>
-            <content:encoded><![CDATA[<p>This is the summary of a very long blog post,</p>
-<p>Use a <code>&lt;!--</code> <code>truncate</code> <code>--&gt;</code> comment to limit blog post size in the list view.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-giới-thiệu">1. Giới thiệu<a href="https://ducbq1.github.io/tech-sphere/blog/rsassasigner-vs-macsigner-nimbus-jwt#1-gi%E1%BB%9Bi-thi%E1%BB%87u" class="hash-link" aria-label="Direct link to 1. Giới thiệu" title="Direct link to 1. Giới thiệu">​</a></h2>
+            <description><![CDATA[1. Giới thiệu]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-giới-thiệu">1. Giới thiệu<a href="https://ducbq1.github.io/tech-sphere/blog/rsassasigner-vs-macsigner-nimbus-jwt#1-gi%E1%BB%9Bi-thi%E1%BB%87u" class="hash-link" aria-label="Direct link to 1. Giới thiệu" title="Direct link to 1. Giới thiệu">​</a></h2>
 <p>Trong thư viện <strong>Nimbus JOSE + JWT</strong>, <code>RSASSASigner</code> và <code>MACSigner</code> là hai cách khác nhau để ký JWT (JSON Web Token). Chúng khác nhau về thuật toán, bảo mật, và trường hợp sử dụng.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-bảng-so-sánh">2. Bảng so sánh<a href="https://ducbq1.github.io/tech-sphere/blog/rsassasigner-vs-macsigner-nimbus-jwt#2-b%E1%BA%A3ng-so-s%C3%A1nh" class="hash-link" aria-label="Direct link to 2. Bảng so sánh" title="Direct link to 2. Bảng so sánh">​</a></h2>
 <table><thead><tr><th>Thuộc tính</th><th><code>MACSigner</code></th><th><code>RSASSASigner</code></th></tr></thead><tbody><tr><td><strong>Loại chữ ký</strong></td><td>HMAC (Hash-based Message Authentication Code)</td><td>RSA (Rivest-Shamir-Adleman)</td></tr><tr><td><strong>Thuật toán</strong></td><td>HMAC-SHA (<code>HS256</code>, <code>HS384</code>, <code>HS512</code>)</td><td>RSA (<code>RS256</code>, <code>RS384</code>, <code>RS512</code>)</td></tr><tr><td><strong>Chìa khóa</strong></td><td>Khóa bí mật chung (Shared Secret)</td><td>Cặp khóa (Private Key &amp; Public Key)</td></tr><tr><td><strong>Tốc độ</strong></td><td>Nhanh hơn do hashing đơn giản</td><td>Chậm hơn do mã hóa bất đối xứng</td></tr><tr><td><strong>Bảo mật</strong></td><td>Kém an toàn hơn vì chia sẻ chung khóa bí mật</td><td>An toàn hơn do khóa private chỉ dành cho server</td></tr><tr><td><strong>Trường hợp sử dụng</strong></td><td>Hệ thống nhỏ, không cần xác thực bên thứ ba</td><td>OAuth2, OpenID Connect, xác thực bên thứ ba</td></tr></tbody></table>
