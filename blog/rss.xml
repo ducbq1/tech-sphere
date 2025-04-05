@@ -112,6 +112,54 @@
             <category>banking</category>
         </item>
         <item>
+            <title><![CDATA[Mô Hình Mạng Tiêu Chuẩn & Kiến Thức Cần Có Cho Lập Trình Viên]]></title>
+            <link>https://ducbq1.github.io/tech-sphere/blog/standard-network-model-and-knowledge</link>
+            <guid>https://ducbq1.github.io/tech-sphere/blog/standard-network-model-and-knowledge</guid>
+            <pubDate>Sat, 05 Apr 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[🧱 Mô hình OSI (Open Systems Interconnection)]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-mô-hình-osi-open-systems-interconnection">🧱 Mô hình OSI (Open Systems Interconnection)<a href="https://ducbq1.github.io/tech-sphere/blog/standard-network-model-and-knowledge#-m%C3%B4-h%C3%ACnh-osi-open-systems-interconnection" class="hash-link" aria-label="Direct link to 🧱 Mô hình OSI (Open Systems Interconnection)" title="Direct link to 🧱 Mô hình OSI (Open Systems Interconnection)">​</a></h2>
+<table><thead><tr><th>Tầng</th><th>Tên</th><th>Chức năng</th></tr></thead><tbody><tr><td>7️⃣</td><td>Application</td><td>Giao tiếp với ứng dụng</td></tr><tr><td>6️⃣</td><td>Presentation</td><td>Mã hóa/Giải mã dữ liệu</td></tr><tr><td>5️⃣</td><td>Session</td><td>Quản lý phiên kết nối</td></tr><tr><td>4️⃣</td><td>Transport</td><td>Truyền dữ liệu đáng tin cậy (TCP/UDP)</td></tr><tr><td>3️⃣</td><td>Network</td><td>Định tuyến và IP</td></tr><tr><td>2️⃣</td><td>Data Link</td><td>Truyền dữ liệu giữa các thiết bị trong cùng mạng</td></tr><tr><td>1️⃣</td><td>Physical</td><td>Truyền tín hiệu điện/tín hiệu vật lý</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-thiết-bị-mạng-cơ-bản">🖧 Thiết bị mạng cơ bản<a href="https://ducbq1.github.io/tech-sphere/blog/standard-network-model-and-knowledge#-thi%E1%BA%BFt-b%E1%BB%8B-m%E1%BA%A1ng-c%C6%A1-b%E1%BA%A3n" class="hash-link" aria-label="Direct link to 🖧 Thiết bị mạng cơ bản" title="Direct link to 🖧 Thiết bị mạng cơ bản">​</a></h2>
+<ul>
+<li>📶 <strong>Router</strong>: Định tuyến gói tin giữa các mạng khác nhau.</li>
+<li>🔁 <strong>Switch</strong>: Kết nối và chuyển tiếp gói tin trong mạng nội bộ.</li>
+<li>🔌 <strong>Hub</strong>: Thiết bị đơn giản chia sẻ tín hiệu tới tất cả thiết bị.</li>
+<li>🌐 <strong>Firewall</strong>: Bảo vệ mạng khỏi truy cập trái phép.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-giao-thức-mạng-quan-trọng">🔒 Giao thức mạng quan trọng<a href="https://ducbq1.github.io/tech-sphere/blog/standard-network-model-and-knowledge#-giao-th%E1%BB%A9c-m%E1%BA%A1ng-quan-tr%E1%BB%8Dng" class="hash-link" aria-label="Direct link to 🔒 Giao thức mạng quan trọng" title="Direct link to 🔒 Giao thức mạng quan trọng">​</a></h2>
+<ul>
+<li><strong>HTTP/HTTPS</strong>: Giao thức truyền siêu văn bản.</li>
+<li><strong>FTP/SFTP</strong>: Truyền tải tệp.</li>
+<li><strong>DNS</strong>: Phân giải tên miền.</li>
+<li><strong>DHCP</strong>: Cấp phát IP động.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-kiến-thức-cần-có-cho-lập-trình-viên-làm-việc-với-mạng">🧠 Kiến thức cần có cho lập trình viên làm việc với mạng<a href="https://ducbq1.github.io/tech-sphere/blog/standard-network-model-and-knowledge#-ki%E1%BA%BFn-th%E1%BB%A9c-c%E1%BA%A7n-c%C3%B3-cho-l%E1%BA%ADp-tr%C3%ACnh-vi%C3%AAn-l%C3%A0m-vi%E1%BB%87c-v%E1%BB%9Bi-m%E1%BA%A1ng" class="hash-link" aria-label="Direct link to 🧠 Kiến thức cần có cho lập trình viên làm việc với mạng" title="Direct link to 🧠 Kiến thức cần có cho lập trình viên làm việc với mạng">​</a></h2>
+<ul>
+<li>📡 <strong>TCP/IP &amp; UDP</strong>: Cách hoạt động của giao thức và phân biệt rõ.</li>
+<li>🧪 <strong>Ping, Traceroute</strong>: Công cụ kiểm tra kết nối mạng.</li>
+<li>🔐 <strong>SSL/TLS</strong>: Bảo mật kết nối giữa client-server.</li>
+<li>📤 <strong>REST API / SOAP</strong>: Cách truyền thông giữa ứng dụng.</li>
+<li>🧰 <strong>Sockets Programming</strong>: Lập trình mạng sử dụng socket trong Java, Python, C#, ...</li>
+<li>📚 <strong>CIDR, Subnetting</strong>: Cách phân chia mạng con.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-mạng-doanh-nghiệp--mô-hình-triển-khai">🏛️ Mạng doanh nghiệp &amp; mô hình triển khai<a href="https://ducbq1.github.io/tech-sphere/blog/standard-network-model-and-knowledge#%EF%B8%8F-m%E1%BA%A1ng-doanh-nghi%E1%BB%87p--m%C3%B4-h%C3%ACnh-tri%E1%BB%83n-khai" class="hash-link" aria-label="Direct link to 🏛️ Mạng doanh nghiệp &amp; mô hình triển khai" title="Direct link to 🏛️ Mạng doanh nghiệp &amp; mô hình triển khai">​</a></h2>
+<ul>
+<li><strong>LAN</strong> (Local Area Network)</li>
+<li><strong>WAN</strong> (Wide Area Network)</li>
+<li><strong>VLAN</strong>, <strong>VPN</strong>, <strong>DMZ</strong>: Các khái niệm và kỹ thuật bảo mật.</li>
+<li><strong>Load Balancer</strong>, <strong>Proxy</strong>, <strong>NAT</strong>: Thiết bị và dịch vụ hỗ trợ phân phối và bảo mật.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-công-cụ--giám-sát-mạng">🔍 Công cụ &amp; giám sát mạng<a href="https://ducbq1.github.io/tech-sphere/blog/standard-network-model-and-knowledge#-c%C3%B4ng-c%E1%BB%A5--gi%C3%A1m-s%C3%A1t-m%E1%BA%A1ng" class="hash-link" aria-label="Direct link to 🔍 Công cụ &amp; giám sát mạng" title="Direct link to 🔍 Công cụ &amp; giám sát mạng">​</a></h2>
+<ul>
+<li>🕵️ Wireshark: Phân tích gói tin mạng.</li>
+<li>📊 Prometheus + Grafana: Giám sát hệ thống mạng.</li>
+<li>🖥️ Nmap: Quét mạng, phát hiện dịch vụ.</li>
+</ul>
+<hr>
+<p>🧑‍💻 <em>Hiểu biết về mô hình mạng không chỉ giúp lập trình viên xây dựng phần mềm hiệu quả hơn mà còn tăng cường kỹ năng bảo mật và khả năng giao tiếp với các đội ngũ vận hành hệ thống.</em></p>]]></content:encoded>
+            <category>network</category>
+        </item>
+        <item>
             <title><![CDATA[Cài đặt loading con trỏ chuột trong WPF (Windows Presentation Foundation)]]></title>
             <link>https://ducbq1.github.io/tech-sphere/blog/cursor-state</link>
             <guid>https://ducbq1.github.io/tech-sphere/blog/cursor-state</guid>
