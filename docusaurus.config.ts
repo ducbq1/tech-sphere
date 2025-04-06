@@ -82,9 +82,9 @@ const config: Config = {
           position: "left",
           label: "Hướng dẫn",
         },
-        { to: "/blog", label: "Nhật ký", position: "left" },
+        { to: "/blog", label: "Bài viết", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/ducbq1",
           label: "GitHub",
           position: "right",
         },
