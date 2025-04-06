@@ -339,6 +339,201 @@
             <category>spring boot</category>
         </item>
         <item>
+            <title><![CDATA[Cơ bản về ứng dụng web]]></title>
+            <link>https://ducbq1.github.io/tech-sphere/blog/web</link>
+            <guid>https://ducbq1.github.io/tech-sphere/blog/web</guid>
+            <pubDate>Fri, 05 Apr 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Cơ bản về ứng dụng web]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="cơ-bản-về-ứng-dụng-web">Cơ bản về ứng dụng web<a href="https://ducbq1.github.io/tech-sphere/blog/web#c%C6%A1-b%E1%BA%A3n-v%E1%BB%81-%E1%BB%A9ng-d%E1%BB%A5ng-web" class="hash-link" aria-label="Direct link to Cơ bản về ứng dụng web" title="Direct link to Cơ bản về ứng dụng web">​</a></h2>
+<p>Ứng dụng web, hay ứng dụng web, là phần mềm được xây dựng bằng các công nghệ như HTML, JavaScript và CSS. Chúng thường được truy cập thông qua trình duyệt web và có thể được sử dụng để thực hiện nhiều tác vụ, từ mua sắm và giao dịch ngân hàng đến phương tiện truyền thông trực tuyến và quản lý tài chính.</p>
+<p>Điều quan trọng là phải hiểu rằng ứng dụng web&nbsp;<em>không phải</em>&nbsp;là trang web. Mặc dù ranh giới có vẻ mơ hồ, nhưng thực tế là chúng khác nhau. Ứng dụng web và trang web có mục đích sử dụng, nhu cầu và kỳ vọng của người dùng khác nhau. Trang web thường được thiết kế để cung cấp thông tin cho người dùng hoặc chấp nhận các thông tin đầu vào cơ bản từ người dùng. Mặt khác, ứng dụng web được thiết kế để tương tác và năng động hơn.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="kiến-trúc-ứng-dụng-web-là-gì">Kiến trúc ứng dụng web là gì?<a href="https://ducbq1.github.io/tech-sphere/blog/web#ki%E1%BA%BFn-tr%C3%BAc-%E1%BB%A9ng-d%E1%BB%A5ng-web-l%C3%A0-g%C3%AC" class="hash-link" aria-label="Direct link to Kiến trúc ứng dụng web là gì?" title="Direct link to Kiến trúc ứng dụng web là gì?">​</a></h2>
+<p>Bây giờ chúng ta đã biết ứng dụng web là gì, hãy cùng nói cụ thể hơn về kiến trúc ứng dụng web. Về cơ bản, kiến trúc ứng dụng web là cách các thành phần của ứng dụng web được xây dựng và kết nối với nhau.</p>
+<p><img decoding="async" loading="lazy" src="https://www.softkraft.co/uploads/blog/web-application-architecture/What-is-web-application-architecture.png" alt="Kiến trúc ứng dụng web là gì" class="img_ev3q"></p>
+<p>Kiến trúc ứng dụng web hiện đại thường được triển khai theo cấu trúc 3 lớp:</p>
+<ul>
+<li><strong>Lớp trình bày:</strong>&nbsp;Đây là giao diện người dùng của ứng dụng web. Lớp này chịu trách nhiệm về các khía cạnh trực quan của ứng dụng web, chẳng hạn như thiết kế giao diện người dùng, bố cục màn hình và điều hướng.</li>
+<li><strong>Lớp ứng dụng:</strong>&nbsp;Đây là lớp logic nghiệp vụ. Lớp này chịu trách nhiệm về logic và các quy trình mà ứng dụng web cần thực hiện. Bao gồm xử lý dữ liệu đầu vào của người dùng, thao tác dữ liệu và thực thi các quy tắc nghiệp vụ. Một hoặc nhiều máy chủ web nằm trong lớp ứng dụng.</li>
+<li><strong>Lớp dữ liệu:</strong>&nbsp;Lớp này chịu trách nhiệm lưu trữ dữ liệu liên tục và truy xuất dữ liệu khi cần. Lớp này thường bao gồm cơ sở dữ liệu và các kho dữ liệu khác như tệp và dịch vụ web. Cần lưu ý rằng lớp dữ liệu có thể có một hoặc nhiều cơ sở dữ liệu, tùy thuộc vào kiến trúc chính xác.</li>
+</ul>
+<p>Cấu trúc 3 tầng rất quan trọng vì nó giúp phân tách các thành phần khác nhau của một ứng dụng phần mềm. Bằng cách phân tách các thành phần này, ứng dụng có thể được thiết kế để hiệu quả và an toàn hơn. Nó cũng giúp bảo trì và mở rộng dễ dàng hơn theo thời gian.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tại-sao-kiến-trúc-ứng-dụng-web-lại-quan-trọng">Tại sao kiến trúc ứng dụng web lại quan trọng?<a href="https://ducbq1.github.io/tech-sphere/blog/web#t%E1%BA%A1i-sao-ki%E1%BA%BFn-tr%C3%BAc-%E1%BB%A9ng-d%E1%BB%A5ng-web-l%E1%BA%A1i-quan-tr%E1%BB%8Dng" class="hash-link" aria-label="Direct link to Tại sao kiến trúc ứng dụng web lại quan trọng?" title="Direct link to Tại sao kiến trúc ứng dụng web lại quan trọng?">​</a></h2>
+<p>Điều quan trọng là phải tập trung vào việc có được kiến trúc ứng dụng web phù hợp trước khi bắt đầu bất kỳ quá trình phát triển web nào. Làm như vậy sẽ giúp đảm bảo rằng ứng dụng web của bạn được thiết lập để cung cấp trải nghiệm tuyệt vời cho người dùng cuối và đáp ứng nhu cầu của doanh nghiệp hiện tại cũng như trong tương lai.</p>
+<p>Một kiến trúc ứng dụng web hiện đại, được thiết kế tốt sẽ đảm bảo ứng dụng web của bạn:</p>
+<ul>
+<li><strong>Có thể mở rộng:</strong>&nbsp;Mọi ứng dụng web đều phải được thiết kế để thích ứng với những thay đổi về lưu lượng truy cập và nhu cầu của người dùng theo thời gian. Một kiến trúc ứng dụng web được thiết kế tốt sẽ đảm bảo những thay đổi về dung lượng như vậy được xử lý phù hợp mà không làm giảm hiệu suất hoặc độ tin cậy.</li>
+<li><strong>Tối ưu hóa cho SEO:</strong>&nbsp;Kiến trúc ứng dụng web được thiết kế tốt có thể hỗ trợ SEO bằng cách tối ưu hóa cấu trúc của trang web để đảm bảo trình thu thập thông tin của công cụ tìm kiếm có thể dễ dàng truy cập và lập chỉ mục nội dung cũng như giúp đảm bảo trang web tải nhanh, từ đó giúp cải thiện thứ hạng và khả năng hiển thị tổng thể.</li>
+<li><strong>Bảo mật:</strong>&nbsp;Một kiến trúc được thiết kế tốt sẽ giữ các thành phần ứng dụng web tách biệt với nhau, giúp giảm bề mặt tấn công cũng như giúp bảo vệ dữ liệu bằng cách cung cấp cơ chế xác thực và ủy quyền an toàn.</li>
+</ul>
+<p>Mặt khác, nếu bạn không dành thời gian để xây dựng một kiến trúc ứng dụng web tốt, bạn có thể gặp phải rất nhiều vấn đề sau này. Nếu không có một kiến trúc vững chắc, ứng dụng web của bạn có thể gặp khó khăn khi mở rộng quy mô, có hiệu suất kém và khó bảo trì. Ngoài ra, bạn có thể thấy khó đảm bảo ứng dụng của mình an toàn vì nó có thể dễ bị tấn công mạng. Nhìn chung, phát triển kiến trúc nên là một phần có chủ đích trong quá trình xây dựng ứng dụng web.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="các-loại-ứng-dụng-web">Các loại ứng dụng web<a href="https://ducbq1.github.io/tech-sphere/blog/web#c%C3%A1c-lo%E1%BA%A1i-%E1%BB%A9ng-d%E1%BB%A5ng-web" class="hash-link" aria-label="Direct link to Các loại ứng dụng web" title="Direct link to Các loại ứng dụng web">​</a></h2>
+<p>Chúng ta đã nói về những điều cơ bản của kiến trúc ứng dụng web và xem xét lý do tại sao nó lại quan trọng. Trước khi đi sâu vào các mô hình kiến trúc ứng dụng web cụ thể, hãy lùi lại một bước và xem xét các loại ứng dụng web chính. Ứng dụng web có nhiều loại khác nhau để đáp ứng nhu cầu của nhiều mục đích sử dụng khác nhau, từ các dịch vụ cực kỳ cơ bản đến các dịch vụ cấp doanh nghiệp cực kỳ phức tạp.</p>
+<p>Trong bài viết này, chúng ta sẽ tập trung vào ba loại ứng dụng web phổ biến nhất, bắt đầu với các ứng dụng được kết xuất phía máy chủ.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ứng-dụng-được-kết-xuất-phía-máy-chủ-ssr">Ứng dụng được kết xuất phía máy chủ (SSR)<a href="https://ducbq1.github.io/tech-sphere/blog/web#%E1%BB%A9ng-d%E1%BB%A5ng-%C4%91%C6%B0%E1%BB%A3c-k%E1%BA%BFt-xu%E1%BA%A5t-ph%C3%ADa-m%C3%A1y-ch%E1%BB%A7-ssr" class="hash-link" aria-label="Direct link to Ứng dụng được kết xuất phía máy chủ (SSR)" title="Direct link to Ứng dụng được kết xuất phía máy chủ (SSR)">​</a></h3>
+<p><img decoding="async" loading="lazy" src="https://www.softkraft.co/uploads/blog/web-application-architecture/SSR.png" alt="SSR" class="img_ev3q"></p>
+<p>Ứng dụng được kết xuất phía máy chủ (SSR) là các ứng dụng web được kết xuất trên máy chủ web thay vì trên trình duyệt hoặc phía máy khách. Điều này có nghĩa là mã ứng dụng được thực thi trên một máy chủ web và HTML được gửi đến trình duyệt, sau đó trình duyệt sẽ hiển thị nội dung cho người dùng.</p>
+<p>Các ứng dụng SSR cung cấp trải nghiệm người dùng tốt hơn, tải trang nhanh hơn và hiệu suất SEO tốt hơn so với các ứng dụng được kết xuất phía máy khách. Hơn nữa, loại ứng dụng này an toàn hơn và có thể mở rộng quy mô dễ dàng hơn so với các ứng dụng được kết xuất phía máy khách.</p>
+<p><strong>Ưu điểm</strong></p>
+<ul>
+<li>Dễ dàng được lập chỉ mục bởi các công cụ tìm kiếm</li>
+<li>Phát triển nhanh chóng bằng các công cụ như Django Admin hoặc ActiveAdmin</li>
+</ul>
+<p><strong>Nhược điểm</strong></p>
+<ul>
+<li>Khó triển khai chức năng UI phức tạp</li>
+<li>Thời gian tải lại ban đầu chậm hơn cho chế độ xem phức tạp</li>
+</ul>
+<p><strong>CÔNG NGHỆ SSR PHỔ BIẾN</strong></p>
+<p><strong>Django:</strong>&nbsp;Một nền tảng ứng dụng web mã nguồn mở dựa trên ngôn ngữ lập trình Python, Django là một trong những công nghệ phổ biến nhất được sử dụng cho các ứng dụng được kết xuất phía máy chủ. Nó cung cấp một nền tảng mạnh mẽ và trực quan để xây dựng các ứng dụng web phức tạp một cách nhanh chóng và hiệu quả.</p>
+<p><strong>Next.js:</strong>&nbsp;Một framework JavaScript dựa trên React, Next.js là một công cụ phổ biến và mạnh mẽ để phát triển ứng dụng web SSR. Nó cung cấp một framework trực quan và mạnh mẽ để xây dựng các ứng dụng web hiện đại một cách nhanh chóng.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ứng-dụng-một-trang-spa">Ứng dụng một trang (SPA)<a href="https://ducbq1.github.io/tech-sphere/blog/web#%E1%BB%A9ng-d%E1%BB%A5ng-m%E1%BB%99t-trang-spa" class="hash-link" aria-label="Direct link to Ứng dụng một trang (SPA)" title="Direct link to Ứng dụng một trang (SPA)">​</a></h3>
+<p><img decoding="async" loading="lazy" src="https://www.softkraft.co/uploads/blog/web-application-architecture/SPA.png" alt="Dịch vụ spa" class="img_ev3q"></p>
+<p>Ứng dụng một trang (SPA) là ứng dụng web tương tác với người dùng bằng cách viết lại trang hiện tại một cách động thay vì tải toàn bộ các trang mới từ máy chủ. Trang được cập nhật theo thời gian thực và được thiết kế để cung cấp trải nghiệm người dùng mượt mà hơn, phản hồi nhanh hơn.</p>
+<p><strong>Ưu điểm:</strong></p>
+<ul>
+<li>Dễ dàng triển khai chức năng UI phức tạp</li>
+<li>Cần nhiều thời gian và chi phí phát triển ban đầu hơn</li>
+</ul>
+<p><strong>Nhược điểm:</strong></p>
+<ul>
+<li>Chi phí phát triển cao hơn</li>
+<li>Trên các thiết bị cấp thấp, người dùng có thể gặp phải sự chậm trễ với một số tương tác UI</li>
+</ul>
+<p><strong>CÔNG NGHỆ SPA PHỔ BIẾN</strong></p>
+<p><strong>React:</strong>&nbsp;React là một trong những công nghệ phổ biến nhất được sử dụng cho SPA. Đây là thư viện JavaScript nguồn mở do Facebook phát triển. React được sử dụng để tạo giao diện người dùng, đặc biệt là cho các ứng dụng trang đơn.</p>
+<p><strong>Vue:</strong>&nbsp;Vue là một công nghệ phổ biến khác được sử dụng cho SPA. Đây là một khuôn khổ JavaScript mã nguồn mở do Evan You tạo ra. Vue được thiết kế đơn giản, dễ học và có hiệu suất cao.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ứng-dụng-web-tiến-bộ-pwa">Ứng dụng web tiến bộ (PWA)<a href="https://ducbq1.github.io/tech-sphere/blog/web#%E1%BB%A9ng-d%E1%BB%A5ng-web-ti%E1%BA%BFn-b%E1%BB%99-pwa" class="hash-link" aria-label="Direct link to Ứng dụng web tiến bộ (PWA)" title="Direct link to Ứng dụng web tiến bộ (PWA)">​</a></h3>
+<p><img decoding="async" loading="lazy" src="https://www.softkraft.co/uploads/blog/web-application-architecture/PWA.png" alt="PWA" class="img_ev3q"></p>
+<p>Ứng dụng web tiến bộ (PWA) là ứng dụng web sử dụng công nghệ web hiện đại để cung cấp trải nghiệm người dùng tương tự như ứng dụng gốc. PWA được thiết kế để nhanh, đáng tin cậy và hấp dẫn.</p>
+<p>Kiến trúc ứng dụng web lũy tiến cung cấp trải nghiệm phong phú, hấp dẫn cho người dùng, cho phép họ truy cập ứng dụng từ bất kỳ thiết bị nào có trình duyệt web mà không cần phải cài đặt ứng dụng gốc.</p>
+<p><strong>Ưu điểm</strong></p>
+<ul>
+<li>Dễ dàng lưu vào màn hình chính của điện thoại người dùng</li>
+<li>Có thể sử dụng ngoại tuyến</li>
+</ul>
+<p><strong>Nhược điểm</strong></p>
+<ul>
+<li>Phức tạp để phát triển và duy trì</li>
+<li>Chi phí phát triển cao hơn</li>
+</ul>
+<p><strong>CÔNG NGHỆ SPA PHỔ BIẾN</strong></p>
+<p><strong>Next.js:</strong>&nbsp;Next.js là một khuôn khổ phổ biến cho phép các nhà phát triển tạo ra các ứng dụng web tiến bộ một cách nhanh chóng. Nó có tích hợp sẵn kết xuất phía máy chủ, định tuyến và phân tách mã tự động.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="các-loại-kiến-trúc-ứng-dụng-web">Các loại kiến trúc ứng dụng web<a href="https://ducbq1.github.io/tech-sphere/blog/web#c%C3%A1c-lo%E1%BA%A1i-ki%E1%BA%BFn-tr%C3%BAc-%E1%BB%A9ng-d%E1%BB%A5ng-web" class="hash-link" aria-label="Direct link to Các loại kiến trúc ứng dụng web" title="Direct link to Các loại kiến trúc ứng dụng web">​</a></h2>
+<p>Bây giờ chúng ta đã phân tích ba loại ứng dụng web, đã đến lúc chuyển sang các loại kiến trúc ứng dụng web khác nhau. Ứng dụng có thể được thiết kế theo nhiều cách khác nhau để phù hợp với nhu cầu của các trường hợp sử dụng và kinh doanh cụ thể.</p>
+<p>Tuy nhiên, nói như vậy có nghĩa là có ba loại kiến trúc ứng dụng web chính mà hầu hết các ứng dụng sẽ thuộc về:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="kiến-trúc-nguyên-khối">Kiến trúc nguyên khối<a href="https://ducbq1.github.io/tech-sphere/blog/web#ki%E1%BA%BFn-tr%C3%BAc-nguy%C3%AAn-kh%E1%BB%91i" class="hash-link" aria-label="Direct link to Kiến trúc nguyên khối" title="Direct link to Kiến trúc nguyên khối">​</a></h3>
+<p>Chúng ta sẽ bắt đầu với mô hình cơ bản nhất, truyền thống nhất: kiến trúc đơn khối. Kiến trúc ứng dụng web này dựa trên một cơ sở mã thống nhất duy nhất cho tất cả các thành phần ứng dụng web. Điều này có nghĩa là cơ sở mã chứa tất cả mã của ứng dụng, bao gồm giao diện người dùng, logic nghiệp vụ và logic truy cập cơ sở dữ liệu. Ngoài ra, tất cả các thành phần của ứng dụng đều chia sẻ cùng một môi trường thời gian chạy.</p>
+<p>Lợi ích chính của kiến trúc monolithic là nó đơn giản hóa quá trình phát triển, vì tất cả mã đều được lưu trữ tại một vị trí duy nhất. Điều này giúp gỡ lỗi và khắc phục sự cố dễ dàng hơn nhiều, vì tất cả mã đều ở một nơi. Ngoài ra, mã có thể được sửa đổi nhanh chóng và dễ dàng, vì không cần phải cập nhật nhiều thành phần.</p>
+<p>Kiến trúc đơn khối không phải là lựa chọn tốt cho các ứng dụng lớn, phức tạp cần mở rộng quy mô để xử lý số lượng lớn người dùng đồng thời.</p>
+<p><img decoding="async" loading="lazy" src="https://www.softkraft.co/uploads/blog/web-application-architecture/Monolithic-architecture.png" alt="Kiến trúc nguyên khối" class="img_ev3q"></p>
+<p><strong>Ưu điểm</strong></p>
+<ul>
+<li>Cơ sở mã đơn giúp phát triển và bảo trì dễ dàng hơn.</li>
+<li>Độ phức tạp thấp do ít bộ phận chuyển động.</li>
+<li>Dễ dàng gỡ lỗi và triển khai mã hơn.</li>
+<li>Hiệu suất được cải thiện do ít yêu cầu mạng hơn.</li>
+</ul>
+<p><strong>Nhược điểm</strong></p>
+<ul>
+<li>Khó có thể mở rộng từng thành phần riêng lẻ.</li>
+<li>Không phù hợp cho việc phát triển nhanh hoặc thay đổi thường xuyên.</li>
+<li>Việc thiếu tính mô-đun có thể khiến việc tái sử dụng mã trở nên khó khăn.</li>
+<li>Không được thiết kế để xử lý lưu lượng giao thông lớn.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="kiến-trúc-vi-dịch-vụ">Kiến trúc vi dịch vụ<a href="https://ducbq1.github.io/tech-sphere/blog/web#ki%E1%BA%BFn-tr%C3%BAc-vi-d%E1%BB%8Bch-v%E1%BB%A5" class="hash-link" aria-label="Direct link to Kiến trúc vi dịch vụ" title="Direct link to Kiến trúc vi dịch vụ">​</a></h3>
+<p>Kiến trúc microservices là một kiến trúc ứng dụng web hiện đại, chia nhỏ một ứng dụng lớn, phức tạp thành các dịch vụ nhỏ hơn, độc lập. Các dịch vụ này giao tiếp với nhau bằng API và có thể triển khai độc lập.</p>
+<p>Trong kiến trúc ứng dụng web vi dịch vụ, mỗi dịch vụ được thiết kế để thực hiện một tác vụ cụ thể. Điều này giúp duy trì cơ sở mã, vì mỗi dịch vụ có thể được quản lý và sửa đổi độc lập với các dịch vụ khác. Các dịch vụ cũng có thể được triển khai, mở rộng và quản lý độc lập. Điều này cho phép kiểm soát chi tiết hơn hiệu suất của ứng dụng và cho phép các nhà phát triển thực hiện các thay đổi nhanh chóng và dễ dàng.</p>
+<p>Ngoài ra, kiến trúc microservices cho phép triển khai và cung cấp các tính năng mới nhanh hơn, vì có thể thực hiện và triển khai các thay đổi cho từng dịch vụ mà không ảnh hưởng đến toàn bộ ứng dụng web. Kiến trúc microservices là lựa chọn tuyệt vời cho các ứng dụng web phức tạp đòi hỏi tính linh hoạt và khả năng mở rộng hoặc yêu cầu sự tham gia của nhiều nhóm phát triển độc lập.</p>
+<p><img decoding="async" loading="lazy" src="https://www.softkraft.co/uploads/blog/web-application-architecture/Microservices-architecture.png" alt="Kiến trúc dịch vụ vi mô" class="img_ev3q"></p>
+<p><strong>Ưu điểm:</strong></p>
+<ul>
+<li>Các nhóm nhỏ, tập trung có thể làm việc độc lập</li>
+<li>Có khả năng mở rộng và phục hồi cao</li>
+<li>Cho phép sử dụng các công nghệ khác nhau cho các dịch vụ khác nhau</li>
+<li>Cô lập lỗi và khả năng phục hồi tốt hơn</li>
+</ul>
+<p><strong>Nhược điểm:</strong></p>
+<ul>
+<li>Tăng độ phức tạp trong thiết kế hệ thống</li>
+<li>Sự cố mạng và độ trễ</li>
+<li>Khó khăn trong việc phát triển và thử nghiệm</li>
+<li>Có khả năng xảy ra vấn đề về tính toàn vẹn của dữ liệu do có nhiều cơ sở dữ liệu.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="kiến-trúc-không-máy-chủ">Kiến trúc không máy chủ<a href="https://ducbq1.github.io/tech-sphere/blog/web#ki%E1%BA%BFn-tr%C3%BAc-kh%C3%B4ng-m%C3%A1y-ch%E1%BB%A7" class="hash-link" aria-label="Direct link to Kiến trúc không máy chủ" title="Direct link to Kiến trúc không máy chủ">​</a></h3>
+<p>Kiến trúc ứng dụng web không máy chủ tận dụng các dịch vụ dựa trên đám mây để triển khai ứng dụng web mà không cần phải quản lý cơ sở hạ tầng cơ bản. Đây là cách xây dựng và chạy các ứng dụng và dịch vụ mà không cần phải nghĩ đến máy chủ web.</p>
+<p>Với các ứng dụng web không có máy chủ, nhà cung cấp đám mây có thể tự động mở rộng ứng dụng để đáp ứng nhu cầu, loại bỏ nhu cầu cung cấp thêm máy chủ. Đây là lựa chọn tuyệt vời cho các ứng dụng web cần mở rộng nhanh và độ trễ thấp, chẳng hạn như các ứng dụng web cần xử lý lượng truy cập lớn</p>
+<p>Các trường hợp sử dụng điển hình cho kiến trúc ứng dụng web không máy chủ bao gồm các ứng dụng web yêu cầu khả năng mở rộng ở mức cao, chẳng hạn như thương mại điện tử, trò chơi và ứng dụng phát trực tuyến. Ngoài ra, các ứng dụng web không máy chủ lý tưởng cho các ứng dụng yêu cầu độ trễ thấp, chẳng hạn như phân tích thời gian thực và ứng dụng học máy.</p>
+<p>Đọc thêm:&nbsp;<a href="https://www-softkraft-co.translate.goog/aws-serverless-architecture/?_x_tr_sl=en&amp;_x_tr_tl=vi&amp;_x_tr_hl=vi&amp;_x_tr_pto=tc" target="_blank" rel="noopener noreferrer">Kiến trúc không máy chủ AWS — Tại sao nó lại quan trọng?</a></p>
+<p><img decoding="async" loading="lazy" src="https://www.softkraft.co/uploads/blog/web-application-architecture/Serverless-Architecture.png" alt="Kiến trúc không máy chủ" class="img_ev3q"></p>
+<p><strong>Ưu điểm:</strong></p>
+<ul>
+<li>Chi phí hoạt động thấp</li>
+<li>Không cần quản lý máy chủ web</li>
+<li>Có khả năng mở rộng cao</li>
+<li>Dễ dàng triển khai và bảo trì</li>
+<li>Kiến trúc hướng sự kiện linh hoạt</li>
+<li>Tập trung vào mã hơn là cơ sở hạ tầng</li>
+</ul>
+<p><strong>Nhược điểm:</strong></p>
+<ul>
+<li>Khởi động lạnh có thể gây ra độ trễ</li>
+<li>Hạn chế đối với một số loại ứng dụng</li>
+<li>Hỗ trợ hạn chế cho việc gỡ lỗi</li>
+<li>Khóa nhà cung cấp</li>
+<li>Chi phí có thể cao hơn cho mức sử dụng cao</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="cách-chọn-đúng-loại-và-kiến-trúc-ứng-dụng-web">Cách chọn đúng loại và kiến trúc ứng dụng web<a href="https://ducbq1.github.io/tech-sphere/blog/web#c%C3%A1ch-ch%E1%BB%8Dn-%C4%91%C3%BAng-lo%E1%BA%A1i-v%C3%A0-ki%E1%BA%BFn-tr%C3%BAc-%E1%BB%A9ng-d%E1%BB%A5ng-web" class="hash-link" aria-label="Direct link to Cách chọn đúng loại và kiến trúc ứng dụng web" title="Direct link to Cách chọn đúng loại và kiến trúc ứng dụng web">​</a></h2>
+<p>Chúng tôi đã xem xét các loại ứng dụng web khác nhau cũng như các kiến trúc bạn có thể sử dụng để xây dựng chúng. Nhưng làm thế nào để bạn chọn đúng loại cho dự án của mình? Có nhiều yếu tố cần xem xét, bao gồm:</p>
+<ul>
+<li>Công dụng hoặc chức năng chính của ứng dụng</li>
+<li>Độ phức tạp của ứng dụng, bao gồm số lượng màn hình và tính năng</li>
+<li>Nhu cầu, kỳ vọng và yêu cầu của người dùng cuối</li>
+<li>Mức độ và sự biến động của lưu lượng người dùng</li>
+<li>Khả năng chịu đựng cho việc bảo trì và hỗ trợ liên tục</li>
+<li>Kinh nghiệm và kỹ năng của các nhà phát triển web của bạn</li>
+<li>Ngân sách phát triển</li>
+<li>Ngân sách bảo trì</li>
+</ul>
+<p>Khi bạn đã hiểu được các yếu tố trên, bạn có thể bắt đầu đánh giá kỹ lưỡng các lựa chọn của mình. Sử dụng biểu đồ bên dưới làm hướng dẫn để tìm đúng loại ứng dụng web cho dự án của bạn:</p>
+<table><thead><tr><th><strong>Loại ứng dụng web</strong></th><th></th></tr></thead><tbody><tr><td>Ứng dụng kết xuất phía máy chủ (SSR)</td><td>* Nếu bạn có một ngân sách nhỏ cho chi phí phát triển ban đầu* Nếu giao diện người dùng của ứng dụng của bạn đơn giản với các tính năng tối thiểu</td></tr><tr><td>Ứng dụng một trang (SPA)</td><td>* Nếu giao diện người dùng của ứng dụng có độ phức tạp trung bình hoặc rất cao và bạn có thể chấp nhận chi phí phát triển ban đầu ở mức trung bình.</td></tr><tr><td>Ứng dụng web tiến bộ (PWA)</td><td>* Nếu giao diện người dùng của ứng dụng của bạn phức tạp ở mức trung bình hoặc rất phức tạp và bạn có thể chịu được chi phí phát triển ban đầu đắt đỏ* Nếu bạn yêu cầu tốc độ tải nhanh nhất, hiệu suất cao và độ tin cậy* Nếu bạn cần ứng dụng của mình hoạt động ở chế độ ngoại tuyến</td></tr></tbody></table>
+<p>Sử dụng biểu đồ bên dưới làm hướng dẫn để tìm kiến trúc ứng dụng web phù hợp cho dự án của bạn:</p>
+<table><thead><tr><th><strong>Kiến trúc ứng dụng web</strong></th><th></th></tr></thead><tbody><tr><td>Kiến trúc nguyên khối</td><td>* Nếu bạn muốn đơn giản hóa cấu trúc ứng dụng và giảm chi phí phát triển* Nếu bạn đang làm việc với một nhóm phát triển duy nhất và ứng dụng của bạn có độ phức tạp từ thấp đến trung bình</td></tr><tr><td>Kiến trúc vi dịch vụ</td><td>* Nếu bạn có thể chấp nhận sự phát triển phức tạp và tốn kém hơn để đổi lấy việc gỡ lỗi dễ dàng hơn và độ tin cậy lâu dài* Nếu ban đầu bạn đang xây dựng một ứng dụng đơn giản nhưng có ý định mở rộng quy mô trong tương lai gần</td></tr><tr><td>Kiến trúc không có máy chủ</td><td>* Nếu bạn muốn giảm đáng kể chi phí máy chủ và bảo trì* Nếu bạn không ngại bị khóa vào một nhà cung cấp máy chủ</td></tr></tbody></table>
+<p>Biểu đồ trên có mục đích cung cấp hướng dẫn chung. Khi còn nghi ngờ, hãy tham khảo ý kiến của kiến trúc sư ứng dụng web hoặc công ty phát triển phần mềm có kinh nghiệm trong việc thiết kế ứng dụng web để đảm bảo bạn đưa ra lựa chọn đúng đắn cho doanh nghiệp của mình.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="hình-dung-kiến-trúc-ứng-dụng-web-bằng-sơ-đồ">Hình dung kiến trúc ứng dụng web bằng sơ đồ<a href="https://ducbq1.github.io/tech-sphere/blog/web#h%C3%ACnh-dung-ki%E1%BA%BFn-tr%C3%BAc-%E1%BB%A9ng-d%E1%BB%A5ng-web-b%E1%BA%B1ng-s%C6%A1-%C4%91%E1%BB%93" class="hash-link" aria-label="Direct link to Hình dung kiến trúc ứng dụng web bằng sơ đồ" title="Direct link to Hình dung kiến trúc ứng dụng web bằng sơ đồ">​</a></h2>
+<p>Sơ đồ kiến trúc ứng dụng web được sử dụng để biểu diễn trực quan cấu trúc của ứng dụng web, mối quan hệ giữa các thành phần của ứng dụng và luồng dữ liệu. Loại sơ đồ này có thể giúp các nhóm:</p>
+<ul>
+<li><strong>Cung cấp cho các nhà phát triển bối cảnh cấp cao quan trọng</strong>&nbsp;về ứng dụng mà họ sẽ làm việc.</li>
+<li><strong>Xác định các vấn đề tiềm ẩn</strong>&nbsp;trong kiến trúc ứng dụng và giúp tìm giải pháp cho các vấn đề đó trước khi bắt đầu triển khai.</li>
+<li><strong>Đạt được sự thống nhất của các bên liên quan</strong>&nbsp;về kế hoạch triển khai và phát triển phần mềm ứng dụng web.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-bước-để-tạo-sơ-đồ-kiến-trúc-cho-ứng-dụng-web">5 bước để tạo sơ đồ kiến trúc cho ứng dụng web<a href="https://ducbq1.github.io/tech-sphere/blog/web#5-b%C6%B0%E1%BB%9Bc-%C4%91%E1%BB%83-t%E1%BA%A1o-s%C6%A1-%C4%91%E1%BB%93-ki%E1%BA%BFn-tr%C3%BAc-cho-%E1%BB%A9ng-d%E1%BB%A5ng-web" class="hash-link" aria-label="Direct link to 5 bước để tạo sơ đồ kiến trúc cho ứng dụng web" title="Direct link to 5 bước để tạo sơ đồ kiến trúc cho ứng dụng web">​</a></h3>
+<p><img decoding="async" loading="lazy" src="https://www.softkraft.co/uploads/blog/web-application-architecture/Milestones.png" alt="Các mốc quan trọng" class="img_ev3q"></p>
+<p>Việc tạo sơ đồ kiến trúc ứng dụng web thường là trách nhiệm của các kiến trúc sư ứng dụng hoặc trưởng nhóm kỹ thuật. Nhưng nếu bạn chưa từng tạo sơ đồ trước đây, bạn có thể gặp khó khăn khi không biết bắt đầu từ đâu. Hãy chia nhỏ thành 5 bước cơ bản:</p>
+<p><strong>1. Thu thập các yêu cầu:</strong>&nbsp;Xem xét hệ thống hiện tại và hiểu các yêu cầu của ứng dụng web. Tham khảo ý kiến của tất cả các bên liên quan để có được sự hiểu biết toàn diện về logic kinh doanh và các hạn chế kỹ thuật mà kiến trúc phát triển web cần được thiết kế trong đó.</p>
+<p><strong>2. Xác định các thành phần:</strong>&nbsp;Xác định tất cả các thành phần ứng dụng web sẽ được sử dụng, tính đến cả phía máy khách và máy chủ. Đảm bảo bao gồm các thành phần như máy chủ web, lưu trữ đám mây, lưu trữ dữ liệu ngoài, lớp truy cập dữ liệu và giao diện người dùng phía máy khách.</p>
+<p><strong>3. Thiết kế kiến trúc:</strong>&nbsp;Thiết kế kiến trúc của ứng dụng web bằng cách vẽ các mũi tên biểu diễn mối quan hệ giữa các thành phần. Cân nhắc việc đưa vào các phương tiện hỗ trợ trực quan như mã hóa màu các lớp kiến trúc khác nhau hoặc thêm ghi chú để cung cấp ngữ cảnh rộng hơn.</p>
+<p><strong>4. Xem xét và tinh chỉnh:</strong>&nbsp;Xem xét sơ đồ kiến trúc ứng dụng web với các bên liên quan và tinh chỉnh nếu cần thiết để dễ hiểu hơn hoặc sửa bất kỳ lỗi nào.</p>
+<p><strong>5. Hoàn thiện sơ đồ:</strong>&nbsp;Hoàn thiện sơ đồ bằng cách thêm tên và thông tin phiên bản của các thành phần cùng các chi tiết cần thiết khác trước khi chia sẻ sơ đồ với ban quản lý hoặc đại diện khách hàng.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="những-gì-cần-đưa-vào-sơ-đồ-kiến-trúc-ứng-dụng-web">Những gì cần đưa vào sơ đồ kiến trúc ứng dụng web<a href="https://ducbq1.github.io/tech-sphere/blog/web#nh%E1%BB%AFng-g%C3%AC-c%E1%BA%A7n-%C4%91%C6%B0a-v%C3%A0o-s%C6%A1-%C4%91%E1%BB%93-ki%E1%BA%BFn-tr%C3%BAc-%E1%BB%A9ng-d%E1%BB%A5ng-web" class="hash-link" aria-label="Direct link to Những gì cần đưa vào sơ đồ kiến trúc ứng dụng web" title="Direct link to Những gì cần đưa vào sơ đồ kiến trúc ứng dụng web">​</a></h3>
+<p>Mức độ chi tiết của sơ đồ ứng dụng web phụ thuộc vào nhu cầu riêng của nhóm bạn, nhưng nhìn chung, sơ đồ của bạn phải bao gồm các thành phần kiến trúc ứng dụng web sau:</p>
+<ul>
+<li><strong>Người dùng:</strong>&nbsp;Điều này sẽ ghi chú nơi người dùng sẽ tương tác với ứng dụng hoặc "đầu vào" của ứng dụng. Đôi khi điều này được kích hoạt là "di động" hoặc "web" để hiển thị ngắn gọn hơn người dùng và giao diện người dùng cùng nhau.</li>
+<li><strong>Front-end/UI:</strong>&nbsp;Một số kiến trúc sư web lựa chọn chia nhỏ người dùng và front-end thực tế trong sơ đồ của họ. Nếu bạn làm vậy, hãy sử dụng điều này để biểu thị những gì người dùng nhìn thấy và tương tác.</li>
+<li><strong>Cơ sở dữ liệu:</strong>&nbsp;Đây là nơi lưu trữ tất cả dữ liệu, chẳng hạn như tài khoản người dùng, tin nhắn và sản phẩm.</li>
+<li><strong>Lưu trữ đám mây:</strong>&nbsp;Điều quan trọng cần lưu ý cụ thể là dữ liệu có được lưu trữ trên đám mây hay không và dữ liệu được kết nối với ứng dụng ở đâu.</li>
+<li><strong>Bộ cân bằng tải.</strong>&nbsp;Nếu có thể, hãy sử dụng bộ này để ghi chú bất kỳ cân bằng tải hoặc phân phối lưu lượng nào.</li>
+<li><strong>Tường lửa.</strong>&nbsp;Các biện pháp bảo mật như tường lửa có thể hữu ích khi đưa vào sơ đồ kiến trúc web của bạn.</li>
+<li><strong>Dịch vụ/logic kinh doanh.</strong>&nbsp;Bạn có thể đưa điều này vào như một biểu tượng biểu thị một loạt các dịch vụ hoặc logic kinh doanh, hoặc bạn có thể liệt kê một danh sách mẫu các dịch vụ để cung cấp cho người đọc nhiều bối cảnh hơn.</li>
+<li><strong>Máy chủ:</strong>&nbsp;Bạn có thể có một máy chủ hoặc nhiều máy chủ. Dù bằng cách nào, hãy đảm bảo bao gồm chúng và chỉ ra cách chúng kết nối vào ứng dụng web của bạn.</li>
+<li><strong>API:</strong>&nbsp;Đây là các công cụ cho phép ứng dụng web giao tiếp với các dịch vụ hoặc cơ sở dữ liệu khác. Lưu ý bất kỳ API chính nào trong sơ đồ của bạn.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="phần-kết-luận">Phần kết luận<a href="https://ducbq1.github.io/tech-sphere/blog/web#ph%E1%BA%A7n-k%E1%BA%BFt-lu%E1%BA%ADn" class="hash-link" aria-label="Direct link to Phần kết luận" title="Direct link to Phần kết luận">​</a></h2>
+<p>Kiến trúc ứng dụng web phù hợp có thể thiết lập dự án phát triển ứng dụng web của bạn thành công. Mặt khác, kiến trúc được thiết kế kém có thể khiến bạn dễ bị đe dọa bảo mật, hạn chế khả năng mở rộng của ứng dụng và khiến các nhà phát triển khó bảo trì.</p>
+<p>Hiểu được các loại ứng dụng web và kiến trúc khác nhau có thể giúp các nhóm thiết kế kiến trúc phù hợp cho dự án của họ. Ngoài ra, như chúng ta đã thấy, sơ đồ kiến trúc ứng dụng web có thể được sử dụng để phát hiện bất kỳ vấn đề tiềm ẩn nào trong kiến trúc cũng như cung cấp cho các nhà phát triển và các bên liên quan khác thông tin quan trọng trước khi bắt đầu triển khai.</p>
+<p>Sử dụng hướng dẫn này làm tài liệu tham khảo cho dự án kiến trúc ứng dụng web tiếp theo của bạn và giúp đảm bảo dự án của bạn được thiết lập để thành công ngay từ đầu!</p>]]></content:encoded>
+            <category>web</category>
+        </item>
+        <item>
             <title><![CDATA[Aspect Oriented Programming (AOP)]]></title>
             <link>https://ducbq1.github.io/tech-sphere/blog/aop</link>
             <guid>https://ducbq1.github.io/tech-sphere/blog/aop</guid>
