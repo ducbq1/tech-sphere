@@ -4,10 +4,142 @@
         <title>Tech Sphere Blog</title>
         <link>https://ducbq1.github.io/tech-sphere/blog</link>
         <description>Tech Sphere Blog</description>
-        <lastBuildDate>Sat, 05 Apr 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 07 Apr 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Tổng quan về Proxy, Reverse Proxy vs. Forward Proxy, Forward Port, Load Balancer]]></title>
+            <link>https://ducbq1.github.io/tech-sphere/blog/proxy</link>
+            <guid>https://ducbq1.github.io/tech-sphere/blog/proxy</guid>
+            <pubDate>Mon, 07 Apr 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[CQRS (Command Query Responsibility Segregation) là một mẫu kiến trúc giúp tách biệt rõ ràng giữa phần đọc dữ liệu (Query) và ghi dữ liệu (Command) trong ứng dụng. Điều này giúp cải thiện hiệu năng, khả năng mở rộng và tính bảo trì của hệ thống.]]></description>
+            <content:encoded><![CDATA[<p>CQRS (Command Query Responsibility Segregation) là một mẫu kiến trúc giúp <strong>tách biệt rõ ràng giữa phần đọc dữ liệu (Query)</strong> và <strong>ghi dữ liệu (Command)</strong> trong ứng dụng. Điều này giúp cải thiện hiệu năng, khả năng mở rộng và tính bảo trì của hệ thống.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-1-tổng-quan">📌 1. Tổng Quan<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#-1-t%E1%BB%95ng-quan" class="hash-link" aria-label="Direct link to 📌 1. Tổng Quan" title="Direct link to 📌 1. Tổng Quan">​</a></h2>
+<ul>
+<li><strong>Command</strong> : Ghi dữ liệu (Insert, Update, Delete)</li>
+<li><strong>Query</strong> : Đọc dữ liệu (SELECT)</li>
+</ul>
+<blockquote>
+<p>Tách biệt để dễ tối ưu hóa từng phần cho mục tiêu khác nhau.</p>
+</blockquote>
+<p><img decoding="async" loading="lazy" alt="1744028749182" src="https://ducbq1.github.io/tech-sphere/assets/images/1744028749182-7c402764237718db2ed4a9836e3fa40a.png" width="1179" height="1008" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-2-kiến-trúc-cqrs">⚙️ 2. Kiến Trúc CQRS<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#%EF%B8%8F-2-ki%E1%BA%BFn-tr%C3%BAc-cqrs" class="hash-link" aria-label="Direct link to ⚙️ 2. Kiến Trúc CQRS" title="Direct link to ⚙️ 2. Kiến Trúc CQRS">​</a></h2>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[Client]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ├──&gt; [Command API] ──&gt; [Command Handler] ──&gt; [Write DB]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   └──&gt; [Query API] ────&gt; [Query Handler] ───&gt; [Read DB]</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ul>
+<li><strong>Write DB</strong> có thể là một schema hoặc hệ thống riêng biệt.</li>
+<li><strong>Read DB</strong> có thể được tối ưu hóa cho hiệu suất truy vấn.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-3-ưu-điểm">✅ 3. Ưu Điểm<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#-3-%C6%B0u-%C4%91i%E1%BB%83m" class="hash-link" aria-label="Direct link to ✅ 3. Ưu Điểm" title="Direct link to ✅ 3. Ưu Điểm">​</a></h2>
+<ul>
+<li>🔄 Tách biệt rõ ràng xử lý đọc và ghi</li>
+<li>🚀 Tối ưu hiệu năng đọc/ghi độc lập</li>
+<li>🔧 Dễ mở rộng, dễ scale từng phần</li>
+<li>🔐 Tăng cường bảo mật và kiểm soát</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-4-nhược-điểm">⚠️ 4. Nhược Điểm<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#%EF%B8%8F-4-nh%C6%B0%E1%BB%A3c-%C4%91i%E1%BB%83m" class="hash-link" aria-label="Direct link to ⚠️ 4. Nhược Điểm" title="Direct link to ⚠️ 4. Nhược Điểm">​</a></h2>
+<ul>
+<li>🧩 Tăng độ phức tạp hệ thống</li>
+<li>🔄 Cần đồng bộ giữa Read DB và Write DB (eventual consistency)</li>
+<li>🧪 Phức tạp hơn khi test và debug</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-5-khi-nào-dùng-cqrs">🛠️ 5. Khi Nào Dùng CQRS?<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#%EF%B8%8F-5-khi-n%C3%A0o-d%C3%B9ng-cqrs" class="hash-link" aria-label="Direct link to 🛠️ 5. Khi Nào Dùng CQRS?" title="Direct link to 🛠️ 5. Khi Nào Dùng CQRS?">​</a></h2>
+<table><thead><tr><th>Tình huống</th><th>Có nên dùng CQRS?</th></tr></thead><tbody><tr><td>Hệ thống đơn giản</td><td>❌ Không cần thiết</td></tr><tr><td>Ứng dụng có nhiều đọc hơn ghi</td><td>✅ Phù hợp</td></tr><tr><td>Yêu cầu hiệu năng cao</td><td>✅ Nên dùng</td></tr><tr><td>Dữ liệu phức tạp và thay đổi thường xuyên</td><td>✅ Rất phù hợp</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-6-so-sánh-với-crud">🔁 6. So Sánh Với CRUD<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#-6-so-s%C3%A1nh-v%E1%BB%9Bi-crud" class="hash-link" aria-label="Direct link to 🔁 6. So Sánh Với CRUD" title="Direct link to 🔁 6. So Sánh Với CRUD">​</a></h2>
+<table><thead><tr><th>Tiêu chí</th><th>CRUD</th><th>CQRS</th></tr></thead><tbody><tr><td>Gộp chung xử lý</td><td>✅</td><td>❌</td></tr><tr><td>Tách biệt xử lý</td><td>❌</td><td>✅</td></tr><tr><td>Đơn giản</td><td>✅</td><td>❌</td></tr><tr><td>Hiệu năng cao</td><td>❌</td><td>✅</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-7-kết-hợp-với-event-sourcing">🔄 7. Kết Hợp Với Event Sourcing<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#-7-k%E1%BA%BFt-h%E1%BB%A3p-v%E1%BB%9Bi-event-sourcing" class="hash-link" aria-label="Direct link to 🔄 7. Kết Hợp Với Event Sourcing" title="Direct link to 🔄 7. Kết Hợp Với Event Sourcing">​</a></h2>
+<p>CQRS thường được kết hợp với <strong>Event Sourcing</strong> để lưu trữ toàn bộ các sự kiện xảy ra thay vì trạng thái hiện tại. Điều này giúp:</p>
+<ul>
+<li>Khôi phục lại dữ liệu ở bất kỳ thời điểm nào</li>
+<li>Audit dễ dàng</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="1744028799715" src="https://ducbq1.github.io/tech-sphere/assets/images/1744028799715-e3323ae63cc49371df9a6b3859477681.png" width="1473" height="774" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="1744028693803" src="https://ducbq1.github.io/tech-sphere/assets/images/1744028693803-7fd3a3681c194ea5ab07725b9d597e0d.png" width="825" height="339" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-tài-liệu-tham-khảo">📚 Tài Liệu Tham Khảo<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#-t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o" class="hash-link" aria-label="Direct link to 📚 Tài Liệu Tham Khảo" title="Direct link to 📚 Tài Liệu Tham Khảo">​</a></h2>
+<ul>
+<li><a href="https://martinfowler.com/bliki/CQRS.html" target="_blank" rel="noopener noreferrer">Martin Fowler on CQRS</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs" target="_blank" rel="noopener noreferrer">Microsoft CQRS Docs</a></li>
+<li><a href="https://eventstore.com/cqrs/" target="_blank" rel="noopener noreferrer">EventStore CQRS</a></li>
+</ul>
+<hr>
+<blockquote>
+<p>🧠 <em>CQRS là công cụ mạnh mẽ, nhưng không phải lúc nào cũng cần thiết. Hãy cân nhắc kỹ trước khi áp dụng.</em></p>
+</blockquote>]]></content:encoded>
+            <category>network</category>
+            <category>proxy</category>
+        </item>
+        <item>
+            <title><![CDATA[Tổng quan về Proxy, Reverse Proxy vs. Forward Proxy, Forward Port, Load Balancer]]></title>
+            <link>https://ducbq1.github.io/tech-sphere/blog/proxy</link>
+            <guid>https://ducbq1.github.io/tech-sphere/blog/proxy</guid>
+            <pubDate>Mon, 07 Apr 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Proxy]]></description>
+            <content:encoded><![CDATA[<p>CQRS (Command Query Responsibility Segregation) là một mẫu kiến trúc giúp <strong>tách biệt rõ ràng giữa phần đọc dữ liệu (Query)</strong> và <strong>ghi dữ liệu (Command)</strong> trong ứng dụng. Điều này giúp cải thiện hiệu năng, khả năng mở rộng và tính bảo trì của hệ thống.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-1-tổng-quan">📌 1. Tổng Quan<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#-1-t%E1%BB%95ng-quan" class="hash-link" aria-label="Direct link to 📌 1. Tổng Quan" title="Direct link to 📌 1. Tổng Quan">​</a></h2>
+<ul>
+<li><strong>Command</strong> : Ghi dữ liệu (Insert, Update, Delete)</li>
+<li><strong>Query</strong> : Đọc dữ liệu (SELECT)</li>
+</ul>
+<blockquote>
+<p>Tách biệt để dễ tối ưu hóa từng phần cho mục tiêu khác nhau.</p>
+</blockquote>
+<p><img decoding="async" loading="lazy" alt="1744028749182" src="https://ducbq1.github.io/tech-sphere/assets/images/1744028749182-7c402764237718db2ed4a9836e3fa40a.png" width="1179" height="1008" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-2-kiến-trúc-cqrs">⚙️ 2. Kiến Trúc CQRS<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#%EF%B8%8F-2-ki%E1%BA%BFn-tr%C3%BAc-cqrs" class="hash-link" aria-label="Direct link to ⚙️ 2. Kiến Trúc CQRS" title="Direct link to ⚙️ 2. Kiến Trúc CQRS">​</a></h2>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[Client]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ├──&gt; [Command API] ──&gt; [Command Handler] ──&gt; [Write DB]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   └──&gt; [Query API] ────&gt; [Query Handler] ───&gt; [Read DB]</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ul>
+<li><strong>Write DB</strong> có thể là một schema hoặc hệ thống riêng biệt.</li>
+<li><strong>Read DB</strong> có thể được tối ưu hóa cho hiệu suất truy vấn.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-3-ưu-điểm">✅ 3. Ưu Điểm<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#-3-%C6%B0u-%C4%91i%E1%BB%83m" class="hash-link" aria-label="Direct link to ✅ 3. Ưu Điểm" title="Direct link to ✅ 3. Ưu Điểm">​</a></h2>
+<ul>
+<li>🔄 Tách biệt rõ ràng xử lý đọc và ghi</li>
+<li>🚀 Tối ưu hiệu năng đọc/ghi độc lập</li>
+<li>🔧 Dễ mở rộng, dễ scale từng phần</li>
+<li>🔐 Tăng cường bảo mật và kiểm soát</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-4-nhược-điểm">⚠️ 4. Nhược Điểm<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#%EF%B8%8F-4-nh%C6%B0%E1%BB%A3c-%C4%91i%E1%BB%83m" class="hash-link" aria-label="Direct link to ⚠️ 4. Nhược Điểm" title="Direct link to ⚠️ 4. Nhược Điểm">​</a></h2>
+<ul>
+<li>🧩 Tăng độ phức tạp hệ thống</li>
+<li>🔄 Cần đồng bộ giữa Read DB và Write DB (eventual consistency)</li>
+<li>🧪 Phức tạp hơn khi test và debug</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-5-khi-nào-dùng-cqrs">🛠️ 5. Khi Nào Dùng CQRS?<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#%EF%B8%8F-5-khi-n%C3%A0o-d%C3%B9ng-cqrs" class="hash-link" aria-label="Direct link to 🛠️ 5. Khi Nào Dùng CQRS?" title="Direct link to 🛠️ 5. Khi Nào Dùng CQRS?">​</a></h2>
+<table><thead><tr><th>Tình huống</th><th>Có nên dùng CQRS?</th></tr></thead><tbody><tr><td>Hệ thống đơn giản</td><td>❌ Không cần thiết</td></tr><tr><td>Ứng dụng có nhiều đọc hơn ghi</td><td>✅ Phù hợp</td></tr><tr><td>Yêu cầu hiệu năng cao</td><td>✅ Nên dùng</td></tr><tr><td>Dữ liệu phức tạp và thay đổi thường xuyên</td><td>✅ Rất phù hợp</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-6-so-sánh-với-crud">🔁 6. So Sánh Với CRUD<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#-6-so-s%C3%A1nh-v%E1%BB%9Bi-crud" class="hash-link" aria-label="Direct link to 🔁 6. So Sánh Với CRUD" title="Direct link to 🔁 6. So Sánh Với CRUD">​</a></h2>
+<table><thead><tr><th>Tiêu chí</th><th>CRUD</th><th>CQRS</th></tr></thead><tbody><tr><td>Gộp chung xử lý</td><td>✅</td><td>❌</td></tr><tr><td>Tách biệt xử lý</td><td>❌</td><td>✅</td></tr><tr><td>Đơn giản</td><td>✅</td><td>❌</td></tr><tr><td>Hiệu năng cao</td><td>❌</td><td>✅</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-7-kết-hợp-với-event-sourcing">🔄 7. Kết Hợp Với Event Sourcing<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#-7-k%E1%BA%BFt-h%E1%BB%A3p-v%E1%BB%9Bi-event-sourcing" class="hash-link" aria-label="Direct link to 🔄 7. Kết Hợp Với Event Sourcing" title="Direct link to 🔄 7. Kết Hợp Với Event Sourcing">​</a></h2>
+<p>CQRS thường được kết hợp với <strong>Event Sourcing</strong> để lưu trữ toàn bộ các sự kiện xảy ra thay vì trạng thái hiện tại. Điều này giúp:</p>
+<ul>
+<li>Khôi phục lại dữ liệu ở bất kỳ thời điểm nào</li>
+<li>Audit dễ dàng</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="1744028799715" src="https://ducbq1.github.io/tech-sphere/assets/images/1744028799715-e3323ae63cc49371df9a6b3859477681.png" width="1473" height="774" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="1744028693803" src="https://ducbq1.github.io/tech-sphere/assets/images/1744028693803-7fd3a3681c194ea5ab07725b9d597e0d.png" width="825" height="339" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-tài-liệu-tham-khảo">📚 Tài Liệu Tham Khảo<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#-t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o" class="hash-link" aria-label="Direct link to 📚 Tài Liệu Tham Khảo" title="Direct link to 📚 Tài Liệu Tham Khảo">​</a></h2>
+<ul>
+<li><a href="https://martinfowler.com/bliki/CQRS.html" target="_blank" rel="noopener noreferrer">Martin Fowler on CQRS</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs" target="_blank" rel="noopener noreferrer">Microsoft CQRS Docs</a></li>
+<li><a href="https://eventstore.com/cqrs/" target="_blank" rel="noopener noreferrer">EventStore CQRS</a></li>
+</ul>
+<hr>
+<blockquote>
+<p>🧠 <em>CQRS là công cụ mạnh mẽ, nhưng không phải lúc nào cũng cần thiết. Hãy cân nhắc kỹ trước khi áp dụng.</em></p>
+</blockquote>]]></content:encoded>
+            <category>network</category>
+            <category>proxy</category>
+        </item>
         <item>
             <title><![CDATA[Kiến Thức và Thuật Ngữ Banking Dành Cho Lập Trình Viên]]></title>
             <link>https://ducbq1.github.io/tech-sphere/blog/banking</link>
