@@ -9,14 +9,14 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Tổng quan về Proxy, Reverse Proxy vs. Forward Proxy, Forward Port, Load Balancer]]></title>
-            <link>https://ducbq1.github.io/tech-sphere/blog/proxy</link>
-            <guid>https://ducbq1.github.io/tech-sphere/blog/proxy</guid>
+            <title><![CDATA[CQRS (Command Query Responsibility Segregation)]]></title>
+            <link>https://ducbq1.github.io/tech-sphere/blog/cqrs</link>
+            <guid>https://ducbq1.github.io/tech-sphere/blog/cqrs</guid>
             <pubDate>Mon, 07 Apr 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[CQRS (Command Query Responsibility Segregation) là một mẫu kiến trúc giúp tách biệt rõ ràng giữa phần đọc dữ liệu (Query) và ghi dữ liệu (Command) trong ứng dụng. Điều này giúp cải thiện hiệu năng, khả năng mở rộng và tính bảo trì của hệ thống.]]></description>
             <content:encoded><![CDATA[<p>CQRS (Command Query Responsibility Segregation) là một mẫu kiến trúc giúp <strong>tách biệt rõ ràng giữa phần đọc dữ liệu (Query)</strong> và <strong>ghi dữ liệu (Command)</strong> trong ứng dụng. Điều này giúp cải thiện hiệu năng, khả năng mở rộng và tính bảo trì của hệ thống.</p>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-1-tổng-quan">📌 1. Tổng Quan<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#-1-t%E1%BB%95ng-quan" class="hash-link" aria-label="Direct link to 📌 1. Tổng Quan" title="Direct link to 📌 1. Tổng Quan">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-1-tổng-quan">📌 1. Tổng Quan<a href="https://ducbq1.github.io/tech-sphere/blog/cqrs#-1-t%E1%BB%95ng-quan" class="hash-link" aria-label="Direct link to 📌 1. Tổng Quan" title="Direct link to 📌 1. Tổng Quan">​</a></h2>
 <ul>
 <li><strong>Command</strong> : Ghi dữ liệu (Insert, Update, Delete)</li>
 <li><strong>Query</strong> : Đọc dữ liệu (SELECT)</li>
@@ -25,14 +25,14 @@
 <p>Tách biệt để dễ tối ưu hóa từng phần cho mục tiêu khác nhau.</p>
 </blockquote>
 <p><img decoding="async" loading="lazy" alt="1744028749182" src="https://ducbq1.github.io/tech-sphere/assets/images/1744028749182-7c402764237718db2ed4a9836e3fa40a.png" width="1179" height="1008" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-2-kiến-trúc-cqrs">⚙️ 2. Kiến Trúc CQRS<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#%EF%B8%8F-2-ki%E1%BA%BFn-tr%C3%BAc-cqrs" class="hash-link" aria-label="Direct link to ⚙️ 2. Kiến Trúc CQRS" title="Direct link to ⚙️ 2. Kiến Trúc CQRS">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-2-kiến-trúc-cqrs">⚙️ 2. Kiến Trúc CQRS<a href="https://ducbq1.github.io/tech-sphere/blog/cqrs#%EF%B8%8F-2-ki%E1%BA%BFn-tr%C3%BAc-cqrs" class="hash-link" aria-label="Direct link to ⚙️ 2. Kiến Trúc CQRS" title="Direct link to ⚙️ 2. Kiến Trúc CQRS">​</a></h2>
 <div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[Client]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ├──&gt; [Command API] ──&gt; [Command Handler] ──&gt; [Write DB]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   └──&gt; [Query API] ────&gt; [Query Handler] ───&gt; [Read DB]</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <ul>
 <li><strong>Write DB</strong> có thể là một schema hoặc hệ thống riêng biệt.</li>
 <li><strong>Read DB</strong> có thể được tối ưu hóa cho hiệu suất truy vấn.</li>
 </ul>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-3-ưu-điểm">✅ 3. Ưu Điểm<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#-3-%C6%B0u-%C4%91i%E1%BB%83m" class="hash-link" aria-label="Direct link to ✅ 3. Ưu Điểm" title="Direct link to ✅ 3. Ưu Điểm">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-3-ưu-điểm">✅ 3. Ưu Điểm<a href="https://ducbq1.github.io/tech-sphere/blog/cqrs#-3-%C6%B0u-%C4%91i%E1%BB%83m" class="hash-link" aria-label="Direct link to ✅ 3. Ưu Điểm" title="Direct link to ✅ 3. Ưu Điểm">​</a></h2>
 <ul>
 <li>🔄 Tách biệt rõ ràng xử lý đọc và ghi</li>
 <li>🚀 Tối ưu hiệu năng đọc/ghi độc lập</li>
@@ -40,20 +40,20 @@
 <li>🔐 Tăng cường bảo mật và kiểm soát</li>
 </ul>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-4-nhược-điểm">⚠️ 4. Nhược Điểm<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#%EF%B8%8F-4-nh%C6%B0%E1%BB%A3c-%C4%91i%E1%BB%83m" class="hash-link" aria-label="Direct link to ⚠️ 4. Nhược Điểm" title="Direct link to ⚠️ 4. Nhược Điểm">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-4-nhược-điểm">⚠️ 4. Nhược Điểm<a href="https://ducbq1.github.io/tech-sphere/blog/cqrs#%EF%B8%8F-4-nh%C6%B0%E1%BB%A3c-%C4%91i%E1%BB%83m" class="hash-link" aria-label="Direct link to ⚠️ 4. Nhược Điểm" title="Direct link to ⚠️ 4. Nhược Điểm">​</a></h2>
 <ul>
 <li>🧩 Tăng độ phức tạp hệ thống</li>
 <li>🔄 Cần đồng bộ giữa Read DB và Write DB (eventual consistency)</li>
 <li>🧪 Phức tạp hơn khi test và debug</li>
 </ul>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-5-khi-nào-dùng-cqrs">🛠️ 5. Khi Nào Dùng CQRS?<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#%EF%B8%8F-5-khi-n%C3%A0o-d%C3%B9ng-cqrs" class="hash-link" aria-label="Direct link to 🛠️ 5. Khi Nào Dùng CQRS?" title="Direct link to 🛠️ 5. Khi Nào Dùng CQRS?">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-5-khi-nào-dùng-cqrs">🛠️ 5. Khi Nào Dùng CQRS?<a href="https://ducbq1.github.io/tech-sphere/blog/cqrs#%EF%B8%8F-5-khi-n%C3%A0o-d%C3%B9ng-cqrs" class="hash-link" aria-label="Direct link to 🛠️ 5. Khi Nào Dùng CQRS?" title="Direct link to 🛠️ 5. Khi Nào Dùng CQRS?">​</a></h2>
 <table><thead><tr><th>Tình huống</th><th>Có nên dùng CQRS?</th></tr></thead><tbody><tr><td>Hệ thống đơn giản</td><td>❌ Không cần thiết</td></tr><tr><td>Ứng dụng có nhiều đọc hơn ghi</td><td>✅ Phù hợp</td></tr><tr><td>Yêu cầu hiệu năng cao</td><td>✅ Nên dùng</td></tr><tr><td>Dữ liệu phức tạp và thay đổi thường xuyên</td><td>✅ Rất phù hợp</td></tr></tbody></table>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-6-so-sánh-với-crud">🔁 6. So Sánh Với CRUD<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#-6-so-s%C3%A1nh-v%E1%BB%9Bi-crud" class="hash-link" aria-label="Direct link to 🔁 6. So Sánh Với CRUD" title="Direct link to 🔁 6. So Sánh Với CRUD">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-6-so-sánh-với-crud">🔁 6. So Sánh Với CRUD<a href="https://ducbq1.github.io/tech-sphere/blog/cqrs#-6-so-s%C3%A1nh-v%E1%BB%9Bi-crud" class="hash-link" aria-label="Direct link to 🔁 6. So Sánh Với CRUD" title="Direct link to 🔁 6. So Sánh Với CRUD">​</a></h2>
 <table><thead><tr><th>Tiêu chí</th><th>CRUD</th><th>CQRS</th></tr></thead><tbody><tr><td>Gộp chung xử lý</td><td>✅</td><td>❌</td></tr><tr><td>Tách biệt xử lý</td><td>❌</td><td>✅</td></tr><tr><td>Đơn giản</td><td>✅</td><td>❌</td></tr><tr><td>Hiệu năng cao</td><td>❌</td><td>✅</td></tr></tbody></table>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-7-kết-hợp-với-event-sourcing">🔄 7. Kết Hợp Với Event Sourcing<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#-7-k%E1%BA%BFt-h%E1%BB%A3p-v%E1%BB%9Bi-event-sourcing" class="hash-link" aria-label="Direct link to 🔄 7. Kết Hợp Với Event Sourcing" title="Direct link to 🔄 7. Kết Hợp Với Event Sourcing">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-7-kết-hợp-với-event-sourcing">🔄 7. Kết Hợp Với Event Sourcing<a href="https://ducbq1.github.io/tech-sphere/blog/cqrs#-7-k%E1%BA%BFt-h%E1%BB%A3p-v%E1%BB%9Bi-event-sourcing" class="hash-link" aria-label="Direct link to 🔄 7. Kết Hợp Với Event Sourcing" title="Direct link to 🔄 7. Kết Hợp Với Event Sourcing">​</a></h2>
 <p>CQRS thường được kết hợp với <strong>Event Sourcing</strong> để lưu trữ toàn bộ các sự kiện xảy ra thay vì trạng thái hiện tại. Điều này giúp:</p>
 <ul>
 <li>Khôi phục lại dữ liệu ở bất kỳ thời điểm nào</li>
@@ -61,7 +61,7 @@
 </ul>
 <p><img decoding="async" loading="lazy" alt="1744028799715" src="https://ducbq1.github.io/tech-sphere/assets/images/1744028799715-e3323ae63cc49371df9a6b3859477681.png" width="1473" height="774" class="img_ev3q"></p>
 <p><img decoding="async" loading="lazy" alt="1744028693803" src="https://ducbq1.github.io/tech-sphere/assets/images/1744028693803-7fd3a3681c194ea5ab07725b9d597e0d.png" width="825" height="339" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-tài-liệu-tham-khảo">📚 Tài Liệu Tham Khảo<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#-t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o" class="hash-link" aria-label="Direct link to 📚 Tài Liệu Tham Khảo" title="Direct link to 📚 Tài Liệu Tham Khảo">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-tài-liệu-tham-khảo">📚 Tài Liệu Tham Khảo<a href="https://ducbq1.github.io/tech-sphere/blog/cqrs#-t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o" class="hash-link" aria-label="Direct link to 📚 Tài Liệu Tham Khảo" title="Direct link to 📚 Tài Liệu Tham Khảo">​</a></h2>
 <ul>
 <li><a href="https://martinfowler.com/bliki/CQRS.html" target="_blank" rel="noopener noreferrer">Martin Fowler on CQRS</a></li>
 <li><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs" target="_blank" rel="noopener noreferrer">Microsoft CQRS Docs</a></li>
@@ -71,8 +71,8 @@
 <blockquote>
 <p>🧠 <em>CQRS là công cụ mạnh mẽ, nhưng không phải lúc nào cũng cần thiết. Hãy cân nhắc kỹ trước khi áp dụng.</em></p>
 </blockquote>]]></content:encoded>
-            <category>network</category>
-            <category>proxy</category>
+            <category>cqrs</category>
+            <category>database</category>
         </item>
         <item>
             <title><![CDATA[Tổng quan về Proxy, Reverse Proxy vs. Forward Proxy, Forward Port, Load Balancer]]></title>
@@ -80,63 +80,55 @@
             <guid>https://ducbq1.github.io/tech-sphere/blog/proxy</guid>
             <pubDate>Mon, 07 Apr 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Proxy]]></description>
-            <content:encoded><![CDATA[<p>CQRS (Command Query Responsibility Segregation) là một mẫu kiến trúc giúp <strong>tách biệt rõ ràng giữa phần đọc dữ liệu (Query)</strong> và <strong>ghi dữ liệu (Command)</strong> trong ứng dụng. Điều này giúp cải thiện hiệu năng, khả năng mở rộng và tính bảo trì của hệ thống.</p>
-<hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-1-tổng-quan">📌 1. Tổng Quan<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#-1-t%E1%BB%95ng-quan" class="hash-link" aria-label="Direct link to 📌 1. Tổng Quan" title="Direct link to 📌 1. Tổng Quan">​</a></h2>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="proxy">Proxy<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#proxy" class="hash-link" aria-label="Direct link to Proxy" title="Direct link to Proxy">​</a></h3>
+<p>Proxy là một server trung gian đóng vai trò chuyển tiếp yêu cầu giữa client (máy người dùng) và server (máy chủ đích). Proxy có thể giúp bảo mật, tăng hiệu suất hoặc kiểm soát truy cập mạng.</p>
+<p>Những loại proxy cần biết:</p>
+<table><thead><tr><th><strong>Loại Proxy</strong></th><th><strong>Khái niệm</strong></th><th><strong>Ứng dụng</strong></th><th><strong>Công cụ/Ứng dụng thực tế</strong></th></tr></thead><tbody><tr><td><strong>Transparent Proxy</strong></td><td>Proxy hoạt động mà không thay đổi yêu cầu hoặc dữ liệu, tiết lộ địa chỉ IP của người dùng.</td><td>Lọc nội dung, kiểm tra lưu lượng mạng mà không làm gián đoạn kết nối của người dùng.</td><td><strong>Squid</strong> , <strong>Websense</strong> (công cụ lọc nội dung trong các tổ chức doanh nghiệp), <strong>Cisco Umbrella</strong></td></tr><tr><td><strong>Anonymous Proxy</strong></td><td>Proxy ẩn danh địa chỉ IP của người dùng, giúp bảo vệ sự riêng tư.</td><td>Bảo mật khi duyệt web, ẩn danh trong các giao dịch trực tuyến.</td><td><strong>Tor</strong> (mạng ẩn danh),  <strong>HideMyAss</strong> , <strong>ProxySite</strong> (công cụ proxy ẩn danh để duyệt web ẩn danh)</td></tr><tr><td><strong>Forward Proxy</strong></td><td>Proxy làm trung gian giữa máy khách và máy chủ, lọc các yêu cầu từ người dùng trước khi gửi đến máy chủ đích.</td><td>Kiểm soát truy cập internet, lọc nội dung web trong các tổ chức, doanh nghiệp.</td><td><strong>Squid Proxy Server</strong> ,  <strong>Blue Coat ProxySG</strong> , <strong>Zscaler</strong> (công cụ lọc và giám sát lưu lượng mạng trong doanh nghiệp)</td></tr><tr><td><strong>Residential Proxy</strong></td><td>Proxy sử dụng địa chỉ IP của các nhà cung cấp dịch vụ internet thực tế, mang lại tính năng ẩn danh cao hơn và khó bị phát hiện.</td><td>Thu thập dữ liệu web (web scraping), kiểm tra quảng cáo, vượt qua các hạn chế khu vực địa lý.</td><td><strong>Luminati</strong> (công cụ residential proxy lớn nhất),  <strong>Smartproxy</strong> , <strong>GeoSurf</strong> (cung cấp IP từ các nhà cung cấp internet thực tế)</td></tr><tr><td><strong>Rotating Proxy</strong></td><td>Proxy thay đổi địa chỉ IP sau mỗi yêu cầu hoặc theo chu kỳ để tránh bị phát hiện hoặc bị chặn.</td><td>Thu thập dữ liệu web, vượt qua giới hạn truy cập, tránh bị cấm do quá nhiều yêu cầu từ một IP.</td><td><strong>ScraperAPI</strong> ,  <strong>ProxyCrawl</strong> , <strong>Storm Proxies</strong> (công cụ rotating proxy cho việc web scraping và vượt qua giới hạn IP)</td></tr><tr><td><strong>Data Center Proxy</strong></td><td>Proxy được lưu trữ trong trung tâm dữ liệu, không liên kết với ISP cụ thể, có tốc độ nhanh nhưng dễ bị phát hiện.</td><td>Cung cấp dịch vụ proxy với chi phí thấp, xử lý khối lượng yêu cầu lớn.</td><td><strong>Blazing SEO</strong> ,  <strong>MyPrivateProxy</strong> , <strong>Oxylabs</strong> (cung cấp proxy từ trung tâm dữ liệu với tốc độ cao và giá rẻ)</td></tr><tr><td><strong>Reverse Proxy</strong></td><td>Proxy nhận yêu cầu từ người dùng và chuyển tiếp đến các máy chủ nội bộ, thường được dùng để cân bằng tải và bảo mật.</td><td>Phân phối lưu lượng, bảo vệ máy chủ web, cải thiện hiệu suất, ngăn chặn tấn công DDoS.</td><td><strong>Nginx</strong> ,  <strong>HAProxy</strong> , <strong>Traefik</strong> (công cụ sử dụng cho phân phối tải và bảo mật máy chủ web)</td></tr><tr><td><strong>SOCKS Proxy</strong></td><td>Giao thức proxy có thể xử lý nhiều loại lưu lượng khác nhau, từ HTTP đến FTP và các giao thức khác.</td><td>Được sử dụng cho các ứng dụng yêu cầu bảo mật và ẩn danh cao, chẳng hạn như chơi game online.</td><td><strong>Shadowsocks</strong> ,  <strong>Proxychains</strong> , <strong>SocksiPy</strong> (công cụ hỗ trợ SOCKS proxy cho các ứng dụng game, ẩn danh và VPN)</td></tr><tr><td><strong>HTTP Proxy</strong></td><td>Proxy xử lý lưu lượng HTTP/HTTPS, quản lý các yêu cầu web.</td><td>Lọc nội dung web, tăng tốc độ truy cập web qua bộ nhớ đệm, quản lý băng thông.</td><td><strong>Charles Proxy</strong> ,  <strong>Fiddler</strong> , <strong>Burp Suite</strong> (công cụ kiểm tra HTTP/HTTPS, bảo mật và phân tích lưu lượng web)</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reverse-proxy-vs-forward-proxy">Reverse Proxy vs. Forward Proxy<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#reverse-proxy-vs-forward-proxy" class="hash-link" aria-label="Direct link to Reverse Proxy vs. Forward Proxy" title="Direct link to Reverse Proxy vs. Forward Proxy">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="forward-proxy">Forward Proxy<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#forward-proxy" class="hash-link" aria-label="Direct link to Forward Proxy" title="Direct link to Forward Proxy">​</a></h4>
+<p>Forward Proxy là một proxy trung gian giữa client và server. Khi client gửi yêu cầu, forward proxy sẽ thay mặt client gửi request đến server, nhận phản hồi và gửi lại cho client.</p>
+<p>Ứng dụng của Forward Proxy:</p>
 <ul>
-<li><strong>Command</strong> : Ghi dữ liệu (Insert, Update, Delete)</li>
-<li><strong>Query</strong> : Đọc dữ liệu (SELECT)</li>
+<li>Ẩn địa chỉ IP thật của client.</li>
+<li>Kiểm soát truy cập internet trong doanh nghiệp.</li>
+<li>Bỏ chặn hoặc truy cập nội dung bị giới hạn địa lý.</li>
 </ul>
-<blockquote>
-<p>Tách biệt để dễ tối ưu hóa từng phần cho mục tiêu khác nhau.</p>
-</blockquote>
-<p><img decoding="async" loading="lazy" alt="1744028749182" src="https://ducbq1.github.io/tech-sphere/assets/images/1744028749182-7c402764237718db2ed4a9836e3fa40a.png" width="1179" height="1008" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-2-kiến-trúc-cqrs">⚙️ 2. Kiến Trúc CQRS<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#%EF%B8%8F-2-ki%E1%BA%BFn-tr%C3%BAc-cqrs" class="hash-link" aria-label="Direct link to ⚙️ 2. Kiến Trúc CQRS" title="Direct link to ⚙️ 2. Kiến Trúc CQRS">​</a></h2>
-<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[Client]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ├──&gt; [Command API] ──&gt; [Command Handler] ──&gt; [Write DB]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   │</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   └──&gt; [Query API] ────&gt; [Query Handler] ───&gt; [Read DB]</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>Ví dụ: Các dịch vụ VPN, Tor hoặc proxy HTTP trong trình duyệt.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="reverse-proxy">Reverse Proxy<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#reverse-proxy" class="hash-link" aria-label="Direct link to Reverse Proxy" title="Direct link to Reverse Proxy">​</a></h4>
+<p>Reverse Proxy đứng trước server và xử lý request từ client, sau đó chuyển tiếp đến server backend phù hợp.</p>
+<p>Ứng dụng của Reverse Proxy:</p>
 <ul>
-<li><strong>Write DB</strong> có thể là một schema hoặc hệ thống riêng biệt.</li>
-<li><strong>Read DB</strong> có thể được tối ưu hóa cho hiệu suất truy vấn.</li>
+<li><strong>Tăng bảo mật</strong> : Giấu địa chỉ IP thật của server backend.</li>
+<li><strong>Cân bằng tải (Load Balancing)</strong> : Phân phối traffic đến nhiều server backend.</li>
+<li><strong>Caching</strong> : Lưu trữ nội dung tĩnh để giảm tải server backend.</li>
+<li><strong>SSL Termination</strong> : Xử lý mã hóa HTTPS thay cho backend server.</li>
 </ul>
-<hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-3-ưu-điểm">✅ 3. Ưu Điểm<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#-3-%C6%B0u-%C4%91i%E1%BB%83m" class="hash-link" aria-label="Direct link to ✅ 3. Ưu Điểm" title="Direct link to ✅ 3. Ưu Điểm">​</a></h2>
+<p><strong>Ví dụ:</strong> Nginx, Apache, HAProxy, Cloudflare.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="so-sánh-forward-proxy-và-reverse-proxy">So sánh Forward Proxy và Reverse Proxy<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#so-s%C3%A1nh-forward-proxy-v%C3%A0-reverse-proxy" class="hash-link" aria-label="Direct link to So sánh Forward Proxy và Reverse Proxy" title="Direct link to So sánh Forward Proxy và Reverse Proxy">​</a></h4>
+<table><thead><tr><th>Đặc điểm</th><th>Forward Proxy</th><th>Reverse Proxy</th></tr></thead><tbody><tr><td>Vị trí triển khai</td><td>Trước client</td><td>Trước server</td></tr><tr><td>Mục đích</td><td>Ẩn danh client, kiểm soát truy cập</td><td>Bảo vệ, tối ưu server</td></tr><tr><td>Bảo mật</td><td>Bảo vệ client</td><td>Bảo vệ backend server</td></tr><tr><td>Caching</td><td>Giúp client truy cập nhanh hơn</td><td>Giảm tải cho server</td></tr><tr><td>Load Balancing</td><td>Không hỗ trợ</td><td>Hỗ trợ</td></tr></tbody></table>
+<p><img decoding="async" loading="lazy" src="https://images.viblo.asia/e2c6a4f6-943a-43fe-8e60-828655c6f4f0.png" alt="" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="forward-port">Forward Port<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#forward-port" class="hash-link" aria-label="Direct link to Forward Port" title="Direct link to Forward Port">​</a></h3>
+<p>Forward Port là kỹ thuật ánh xạ một cổng mạng từ một IP cụ thể đến một thiết bị hoặc dịch vụ khác trong hệ thống.</p>
+<p>Ứng dụng của Forward Port:</p>
 <ul>
-<li>🔄 Tách biệt rõ ràng xử lý đọc và ghi</li>
-<li>🚀 Tối ưu hiệu năng đọc/ghi độc lập</li>
-<li>🔧 Dễ mở rộng, dễ scale từng phần</li>
-<li>🔐 Tăng cường bảo mật và kiểm soát</li>
+<li>Cho phép truy cập dịch vụ nội bộ từ bên ngoài (VD: truy cập SSH, RDP).</li>
+<li>Định tuyến traffic đến container trong môi trường Docker.</li>
+<li>Cấu hình NAT trong mạng nội bộ.</li>
 </ul>
-<hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-4-nhược-điểm">⚠️ 4. Nhược Điểm<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#%EF%B8%8F-4-nh%C6%B0%E1%BB%A3c-%C4%91i%E1%BB%83m" class="hash-link" aria-label="Direct link to ⚠️ 4. Nhược Điểm" title="Direct link to ⚠️ 4. Nhược Điểm">​</a></h2>
+<p><strong>Ví dụ:</strong> Nếu bạn có một server chạy ứng dụng web trên cổng 8080, bạn có thể chuyển tiếp cổng 80 đến 8080 để truy cập dễ dàng hơn.</p>
+<p><img decoding="async" loading="lazy" src="https://images.viblo.asia/83a62909-4825-4974-a078-17b4917203c9.jpg" alt="" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="load-balancer">Load Balancer<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#load-balancer" class="hash-link" aria-label="Direct link to Load Balancer" title="Direct link to Load Balancer">​</a></h3>
+<p>Load Balancer là hệ thống giúp phân phối traffic đến nhiều server backend để đảm bảo hiệu suất và tính sẵn sàng cao.</p>
+<p>Các phương pháp Load Balancing phổ biến:</p>
 <ul>
-<li>🧩 Tăng độ phức tạp hệ thống</li>
-<li>🔄 Cần đồng bộ giữa Read DB và Write DB (eventual consistency)</li>
-<li>🧪 Phức tạp hơn khi test và debug</li>
+<li><strong>Round Robin</strong> : Gửi request lần lượt đến từng server.</li>
+<li><strong>Least Connections</strong> : Gửi request đến server có ít kết nối nhất.</li>
+<li><strong>IP Hash</strong> : Chuyển hướng client cố định đến cùng một server dựa trên địa chỉ IP.</li>
+<li><strong>Weighted Load Balancing</strong> : Phân bổ dựa trên trọng số từng server.</li>
 </ul>
-<hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-5-khi-nào-dùng-cqrs">🛠️ 5. Khi Nào Dùng CQRS?<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#%EF%B8%8F-5-khi-n%C3%A0o-d%C3%B9ng-cqrs" class="hash-link" aria-label="Direct link to 🛠️ 5. Khi Nào Dùng CQRS?" title="Direct link to 🛠️ 5. Khi Nào Dùng CQRS?">​</a></h2>
-<table><thead><tr><th>Tình huống</th><th>Có nên dùng CQRS?</th></tr></thead><tbody><tr><td>Hệ thống đơn giản</td><td>❌ Không cần thiết</td></tr><tr><td>Ứng dụng có nhiều đọc hơn ghi</td><td>✅ Phù hợp</td></tr><tr><td>Yêu cầu hiệu năng cao</td><td>✅ Nên dùng</td></tr><tr><td>Dữ liệu phức tạp và thay đổi thường xuyên</td><td>✅ Rất phù hợp</td></tr></tbody></table>
-<hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-6-so-sánh-với-crud">🔁 6. So Sánh Với CRUD<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#-6-so-s%C3%A1nh-v%E1%BB%9Bi-crud" class="hash-link" aria-label="Direct link to 🔁 6. So Sánh Với CRUD" title="Direct link to 🔁 6. So Sánh Với CRUD">​</a></h2>
-<table><thead><tr><th>Tiêu chí</th><th>CRUD</th><th>CQRS</th></tr></thead><tbody><tr><td>Gộp chung xử lý</td><td>✅</td><td>❌</td></tr><tr><td>Tách biệt xử lý</td><td>❌</td><td>✅</td></tr><tr><td>Đơn giản</td><td>✅</td><td>❌</td></tr><tr><td>Hiệu năng cao</td><td>❌</td><td>✅</td></tr></tbody></table>
-<hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-7-kết-hợp-với-event-sourcing">🔄 7. Kết Hợp Với Event Sourcing<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#-7-k%E1%BA%BFt-h%E1%BB%A3p-v%E1%BB%9Bi-event-sourcing" class="hash-link" aria-label="Direct link to 🔄 7. Kết Hợp Với Event Sourcing" title="Direct link to 🔄 7. Kết Hợp Với Event Sourcing">​</a></h2>
-<p>CQRS thường được kết hợp với <strong>Event Sourcing</strong> để lưu trữ toàn bộ các sự kiện xảy ra thay vì trạng thái hiện tại. Điều này giúp:</p>
-<ul>
-<li>Khôi phục lại dữ liệu ở bất kỳ thời điểm nào</li>
-<li>Audit dễ dàng</li>
-</ul>
-<p><img decoding="async" loading="lazy" alt="1744028799715" src="https://ducbq1.github.io/tech-sphere/assets/images/1744028799715-e3323ae63cc49371df9a6b3859477681.png" width="1473" height="774" class="img_ev3q"></p>
-<p><img decoding="async" loading="lazy" alt="1744028693803" src="https://ducbq1.github.io/tech-sphere/assets/images/1744028693803-7fd3a3681c194ea5ab07725b9d597e0d.png" width="825" height="339" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-tài-liệu-tham-khảo">📚 Tài Liệu Tham Khảo<a href="https://ducbq1.github.io/tech-sphere/blog/proxy#-t%C3%A0i-li%E1%BB%87u-tham-kh%E1%BA%A3o" class="hash-link" aria-label="Direct link to 📚 Tài Liệu Tham Khảo" title="Direct link to 📚 Tài Liệu Tham Khảo">​</a></h2>
-<ul>
-<li><a href="https://martinfowler.com/bliki/CQRS.html" target="_blank" rel="noopener noreferrer">Martin Fowler on CQRS</a></li>
-<li><a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs" target="_blank" rel="noopener noreferrer">Microsoft CQRS Docs</a></li>
-<li><a href="https://eventstore.com/cqrs/" target="_blank" rel="noopener noreferrer">EventStore CQRS</a></li>
-</ul>
-<hr>
-<blockquote>
-<p>🧠 <em>CQRS là công cụ mạnh mẽ, nhưng không phải lúc nào cũng cần thiết. Hãy cân nhắc kỹ trước khi áp dụng.</em></p>
-</blockquote>]]></content:encoded>
+<p><strong>Ví dụ:</strong> AWS Elastic Load Balancer, Nginx, HAProxy.</p>
+<p><img decoding="async" loading="lazy" src="https://images.viblo.asia/2dbcbd02-66d6-4f6e-9f47-e1a4887b96c7.jpg" alt="" class="img_ev3q"></p>
+<p>Hiểu rõ các khái niệm này sẽ giúp bạn làm việc hiệu quả với hệ thống mạng, web server và tối ưu hóa hiệu suất hệ thống</p>]]></content:encoded>
             <category>network</category>
             <category>proxy</category>
         </item>
