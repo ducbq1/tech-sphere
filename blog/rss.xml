@@ -98,6 +98,164 @@ Ví dụ, "Tài nguyên này chỉ có thể được truy cập <strong>TRONG G
             <category>spring</category>
         </item>
         <item>
+            <title><![CDATA[Kiến Thức Cần Có Của Một DevOps Engineer]]></title>
+            <link>https://ducbq1.github.io/tech-sphere/blog/devops</link>
+            <guid>https://ducbq1.github.io/tech-sphere/blog/devops</guid>
+            <pubDate>Tue, 08 Apr 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[⚙️ 1. Kiến thức nền tảng về hệ thống]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-1-kiến-thức-nền-tảng-về-hệ-thống">⚙️ 1. Kiến thức nền tảng về hệ thống<a href="https://ducbq1.github.io/tech-sphere/blog/devops#%EF%B8%8F-1-ki%E1%BA%BFn-th%E1%BB%A9c-n%E1%BB%81n-t%E1%BA%A3ng-v%E1%BB%81-h%E1%BB%87-th%E1%BB%91ng" class="hash-link" aria-label="Direct link to ⚙️ 1. Kiến thức nền tảng về hệ thống" title="Direct link to ⚙️ 1. Kiến thức nền tảng về hệ thống">​</a></h2>
+<ul>
+<li><strong>Hệ điều hành</strong>: Nắm vững Linux (Ubuntu, CentOS, Alpine...), scripting với Bash.</li>
+<li><strong>Mạng máy tính</strong>: Hiểu IP, DNS, HTTP/HTTPS, Proxy, Load Balancer, Firewall.</li>
+<li><strong>Hệ thống</strong>: Quản lý file, process, bộ nhớ, CPU, cách debug và tối ưu hiệu suất.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-2-công-cụ-cicd">🛠️ 2. Công cụ CI/CD<a href="https://ducbq1.github.io/tech-sphere/blog/devops#%EF%B8%8F-2-c%C3%B4ng-c%E1%BB%A5-cicd" class="hash-link" aria-label="Direct link to 🛠️ 2. Công cụ CI/CD" title="Direct link to 🛠️ 2. Công cụ CI/CD">​</a></h2>
+<ul>
+<li>Sử dụng và triển khai: <strong>Jenkins</strong>, <strong>GitHub Actions</strong>, <strong>GitLab CI</strong>, <strong>ArgoCD</strong>, v.v.</li>
+<li>Viết pipeline để:<!-- -->
+<ul>
+<li>Tự động hoá build, test, deploy.</li>
+<li>Tích hợp kiểm tra bảo mật (Trivy, SonarQube...).</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-3-kiến-thức-về-cloud">☁️ 3. Kiến thức về Cloud<a href="https://ducbq1.github.io/tech-sphere/blog/devops#%EF%B8%8F-3-ki%E1%BA%BFn-th%E1%BB%A9c-v%E1%BB%81-cloud" class="hash-link" aria-label="Direct link to ☁️ 3. Kiến thức về Cloud" title="Direct link to ☁️ 3. Kiến thức về Cloud">​</a></h2>
+<ul>
+<li>Các nền tảng phổ biến: <strong>AWS</strong>, <strong>GCP</strong>, <strong>Azure</strong>.</li>
+<li>Dịch vụ quan trọng: EC2, S3, RDS, IAM, VPC, CloudWatch.</li>
+<li>Sử dụng CLI, Console, SDK để tương tác với Cloud.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-4-container--orchestration">🐳 4. Container &amp; Orchestration<a href="https://ducbq1.github.io/tech-sphere/blog/devops#-4-container--orchestration" class="hash-link" aria-label="Direct link to 🐳 4. Container &amp; Orchestration" title="Direct link to 🐳 4. Container &amp; Orchestration">​</a></h2>
+<ul>
+<li><strong>Docker</strong>: Viết Dockerfile, build image, docker-compose.</li>
+<li><strong>Kubernetes</strong>: Pod, Deployment, Service, Ingress, Helm.</li>
+<li>Triển khai ứng dụng trên K8s, rolling update, autoscaling.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-5-bảo-mật-hệ-thống">🔒 5. Bảo mật hệ thống<a href="https://ducbq1.github.io/tech-sphere/blog/devops#-5-b%E1%BA%A3o-m%E1%BA%ADt-h%E1%BB%87-th%E1%BB%91ng" class="hash-link" aria-label="Direct link to 🔒 5. Bảo mật hệ thống" title="Direct link to 🔒 5. Bảo mật hệ thống">​</a></h2>
+<ul>
+<li><strong>IAM, RBAC</strong>: Phân quyền người dùng, kiểm soát truy cập.</li>
+<li>Quản lý <strong>Secret</strong>: Dùng HashiCorp Vault, Sealed Secrets, SOPS.</li>
+<li><strong>Security scanning</strong>: Phân tích lỗ hổng container image, CI/CD pipeline.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-6-monitoring-logging-và-alerting">📈 6. Monitoring, Logging và Alerting<a href="https://ducbq1.github.io/tech-sphere/blog/devops#-6-monitoring-logging-v%C3%A0-alerting" class="hash-link" aria-label="Direct link to 📈 6. Monitoring, Logging và Alerting" title="Direct link to 📈 6. Monitoring, Logging và Alerting">​</a></h2>
+<ul>
+<li><strong>Prometheus + Grafana</strong>: Thu thập và hiển thị metrics.</li>
+<li><strong>ELK Stack</strong>: Elasticsearch, Logstash, Kibana; hoặc dùng <strong>EFK</strong>, Fluentbit.</li>
+<li>Hệ thống cảnh báo: <strong>Alertmanager</strong>, <strong>PagerDuty</strong>, <strong>Opsgenie</strong>.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-7-infrastructure-as-code-iac">🔁 7. Infrastructure as Code (IaC)<a href="https://ducbq1.github.io/tech-sphere/blog/devops#-7-infrastructure-as-code-iac" class="hash-link" aria-label="Direct link to 🔁 7. Infrastructure as Code (IaC)" title="Direct link to 🔁 7. Infrastructure as Code (IaC)">​</a></h2>
+<ul>
+<li>Sử dụng: <strong>Terraform</strong>, <strong>Pulumi</strong>, hoặc <strong>CloudFormation</strong>.</li>
+<li>Quản lý hạ tầng dưới dạng mã, dễ dàng kiểm soát và triển khai.</li>
+<li>Kết hợp với CI/CD để tự động hoá hạ tầng.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-8-kiến-thức-bổ-trợ-khác">📚 8. Kiến thức bổ trợ khác<a href="https://ducbq1.github.io/tech-sphere/blog/devops#-8-ki%E1%BA%BFn-th%E1%BB%A9c-b%E1%BB%95-tr%E1%BB%A3-kh%C3%A1c" class="hash-link" aria-label="Direct link to 📚 8. Kiến thức bổ trợ khác" title="Direct link to 📚 8. Kiến thức bổ trợ khác">​</a></h2>
+<ul>
+<li><strong>Git</strong>: Nắm vững Git flow, branching, merge, rebase.</li>
+<li><strong>Agile/Scrum</strong>: Hiểu cách làm việc theo nhóm, quản lý task hiệu quả.</li>
+<li><strong>SRE</strong>: Ứng dụng tư duy Site Reliability Engineering.</li>
+<li>Kỹ năng đọc tài liệu, phân tích log, debugging, giao tiếp nhóm.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-gợi-ý-lộ-trình-học-devops-trong-3-6-tháng">📅 Gợi ý lộ trình học DevOps trong 3-6 tháng<a href="https://ducbq1.github.io/tech-sphere/blog/devops#-g%E1%BB%A3i-%C3%BD-l%E1%BB%99-tr%C3%ACnh-h%E1%BB%8Dc-devops-trong-3-6-th%C3%A1ng" class="hash-link" aria-label="Direct link to 📅 Gợi ý lộ trình học DevOps trong 3-6 tháng" title="Direct link to 📅 Gợi ý lộ trình học DevOps trong 3-6 tháng">​</a></h2>
+<ol>
+<li>Học <strong>Linux cơ bản</strong>, <strong>Git</strong>, và <strong>Docker</strong>.</li>
+<li>Làm quen với <strong>CI/CD</strong> thông qua <strong>GitHub Actions</strong>, <strong>Jenkins</strong>.</li>
+<li>Học nền tảng Cloud (ưu tiên AWS).</li>
+<li>Làm chủ Kubernetes và triển khai Helm chart.</li>
+<li>Tích hợp giám sát với Prometheus + Grafana.</li>
+<li>Học <strong>IaC</strong> với Terraform để quản lý hạ tầng.</li>
+<li>Thực hành: Làm project CI/CD + Cloud thực tế.</li>
+</ol>
+<hr>
+<blockquote>
+<p>📌 <em>Ghi nhớ</em>: DevOps không chỉ là về công cụ, mà là tư duy tự động hóa và tối ưu hóa luồng phát triển - triển khai phần mềm.</p>
+</blockquote>]]></content:encoded>
+            <category>devops</category>
+        </item>
+        <item>
+            <title><![CDATA[Linux cơ bản cho DevOps]]></title>
+            <link>https://ducbq1.github.io/tech-sphere/blog/linux</link>
+            <guid>https://ducbq1.github.io/tech-sphere/blog/linux</guid>
+            <pubDate>Tue, 08 Apr 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[🐧 Linux cơ bản cho DevOps]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-linux-cơ-bản-cho-devops">🐧 Linux cơ bản cho DevOps<a href="https://ducbq1.github.io/tech-sphere/blog/linux#-linux-c%C6%A1-b%E1%BA%A3n-cho-devops" class="hash-link" aria-label="Direct link to 🐧 Linux cơ bản cho DevOps" title="Direct link to 🐧 Linux cơ bản cho DevOps">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1--command-line-dòng-lệnh">1. 💻 Command line (dòng lệnh)<a href="https://ducbq1.github.io/tech-sphere/blog/linux#1--command-line-d%C3%B2ng-l%E1%BB%87nh" class="hash-link" aria-label="Direct link to 1. 💻 Command line (dòng lệnh)" title="Direct link to 1. 💻 Command line (dòng lệnh)">​</a></h3>
+<ul>
+<li><code>pwd</code>, <code>ls</code>, <code>cd</code>, <code>mkdir</code>, <code>rm</code>, <code>touch</code>, <code>cp</code>, <code>mv</code></li>
+<li><code>cat</code>, <code>less</code>, <code>head</code>, <code>tail</code>, <code>grep</code>, <code>find</code>, <code>xargs</code></li>
+<li><code>ps</code>, <code>top</code>, <code>htop</code>, <code>kill</code>, <code>killall</code>, <code>free</code>, <code>df</code>, <code>du</code></li>
+<li>Redirection &amp; Pipe:<!-- -->
+<ul>
+<li><code>&gt;</code>: Ghi đè file</li>
+<li><code>&gt;&gt;</code>: Ghi thêm vào file</li>
+<li><code>|</code>: Pipe (truyền kết quả sang lệnh khác)</li>
+<li><code>&amp;</code>: Chạy nền</li>
+</ul>
+</li>
+<li>Lệnh nâng cao: <code>awk</code>, <code>sed</code>, <code>cut</code>, <code>sort</code>, <code>uniq</code></li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2--file-system-hệ-thống-tệp">2. 🗂 File system (Hệ thống tệp)<a href="https://ducbq1.github.io/tech-sphere/blog/linux#2--file-system-h%E1%BB%87-th%E1%BB%91ng-t%E1%BB%87p" class="hash-link" aria-label="Direct link to 2. 🗂 File system (Hệ thống tệp)" title="Direct link to 2. 🗂 File system (Hệ thống tệp)">​</a></h3>
+<ul>
+<li><strong>Đường dẫn tuyệt đối vs tương đối</strong></li>
+<li><strong>Cấu trúc thư mục Linux phổ biến</strong>:<!-- -->
+<ul>
+<li><code>/home</code>: thư mục người dùng</li>
+<li><code>/etc</code>: file cấu hình</li>
+<li><code>/var/log</code>: log hệ thống</li>
+<li><code>/usr/bin</code>, <code>/usr/sbin</code>: binary chương trình</li>
+</ul>
+</li>
+<li><strong>File permission</strong>: <code>ls -l</code>
+<ul>
+<li>Ví dụ: <code>-rw-r--r--</code></li>
+<li>Quy tắc: <code>user | group | other</code></li>
+</ul>
+</li>
+<li><strong>Lệnh quản lý quyền</strong>:<!-- -->
+<ul>
+<li><code>chmod</code>: thay đổi quyền (vd: <code>chmod +x script.sh</code>)</li>
+<li><code>chown</code>: thay đổi chủ sở hữu</li>
+<li><code>chgrp</code>: thay đổi group sở hữu</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3--phân-quyền-permission">3. 🔐 Phân quyền (Permission)<a href="https://ducbq1.github.io/tech-sphere/blog/linux#3--ph%C3%A2n-quy%E1%BB%81n-permission" class="hash-link" aria-label="Direct link to 3. 🔐 Phân quyền (Permission)" title="Direct link to 3. 🔐 Phân quyền (Permission)">​</a></h3>
+<ul>
+<li><strong>Kiểu quyền</strong>:<!-- -->
+<ul>
+<li><code>r</code> – read</li>
+<li><code>w</code> – write</li>
+<li><code>x</code> – execute</li>
+</ul>
+</li>
+<li><strong>Cách xem và sửa</strong>:<!-- -->
+<ul>
+<li><code>ls -l</code>: xem quyền</li>
+<li><code>chmod 755 file.sh</code>:<!-- -->
+<ul>
+<li><code>7 = rwx</code>, <code>5 = r-x</code>, <code>5 = r-x</code> (owner, group, others)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Sudo</strong>:<!-- -->
+<ul>
+<li>Chạy lệnh với quyền root: <code>sudo</code></li>
+<li>Quản lý quyền sudo: file <code>/etc/sudoers</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4--bash-scripting-viết-script-tự-động-hoá">4. 🧠 Bash scripting (Viết script tự động hoá)<a href="https://ducbq1.github.io/tech-sphere/blog/linux#4--bash-scripting-vi%E1%BA%BFt-script-t%E1%BB%B1-%C4%91%E1%BB%99ng-ho%C3%A1" class="hash-link" aria-label="Direct link to 4. 🧠 Bash scripting (Viết script tự động hoá)" title="Direct link to 4. 🧠 Bash scripting (Viết script tự động hoá)">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="cấu-trúc-cơ-bản">Cấu trúc cơ bản:<a href="https://ducbq1.github.io/tech-sphere/blog/linux#c%E1%BA%A5u-tr%C3%BAc-c%C6%A1-b%E1%BA%A3n" class="hash-link" aria-label="Direct link to Cấu trúc cơ bản:" title="Direct link to Cấu trúc cơ bản:">​</a></h4>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">#!/bin/bash</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">echo "Xin chào DevOps!"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># biến</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">name="DevOps"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">echo "Tôi tên là $name"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># if</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">if [ -f "file.txt" ]; then</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  echo "File tồn tại"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">fi</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># vòng lặp</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">for i in {1..5}; do</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  echo "Lần $i"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">done</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># hàm</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">hello() {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  echo "Chào $1"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">hello "bạn"</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>]]></content:encoded>
+            <category>devops</category>
+            <category>linux</category>
+        </item>
+        <item>
             <title><![CDATA[CQRS (Command Query Responsibility Segregation)]]></title>
             <link>https://ducbq1.github.io/tech-sphere/blog/cqrs</link>
             <guid>https://ducbq1.github.io/tech-sphere/blog/cqrs</guid>
