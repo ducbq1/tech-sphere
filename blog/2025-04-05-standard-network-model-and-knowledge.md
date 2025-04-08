@@ -6,6 +6,10 @@ tags: [network]
 ---
 # 🌐 Mô Hình Mạng Tiêu Chuẩn & Kiến Thức Cần Có Cho Lập Trình Viên
 
+
+<!-- truncate -->
+
+
 ## 🧱 Mô hình OSI (Open Systems Interconnection)
 
 | Tầng | Tên         | Chức năng                                               |

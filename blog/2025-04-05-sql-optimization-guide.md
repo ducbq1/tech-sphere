@@ -8,6 +8,9 @@ tags: [sql, optimization]
 
 Tài liệu này tổng hợp các kỹ thuật giúp tối ưu hóa câu truy vấn SQL để nâng cao hiệu suất hệ thống.
 
+<!-- truncate -->
+
+
 ## 🔍 1. Sử dụng Chỉ mục (Indexes)
 
 - ✅ Tạo chỉ mục cho các cột được dùng trong `WHERE`, `JOIN`, `ORDER BY`.
