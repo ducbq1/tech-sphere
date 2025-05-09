@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktech_sphere=self.webpackChunktech_sphere||[]).push([[3831],{4076:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/tech-sphere/blog/page/2","page":2,"postsPerPage":10,"totalPages":3,"totalCount":23,"previousPage":"/tech-sphere/blog","nextPage":"/tech-sphere/blog/page/3","blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
