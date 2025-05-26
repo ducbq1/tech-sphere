@@ -31,6 +31,19 @@ const config: Config = {
     locales: ["en"],
   },
 
+  plugins: [
+    [
+      "@docusaurus/plugin-ideal-image",
+      {
+        quality: 70,
+        max: 1030, // max resized image's width.
+        min: 640, // min resized image's width.
+        steps: 2,
+        disableInDev: false,
+      },
+    ],
+  ],
+
   presets: [
     [
       "classic",
