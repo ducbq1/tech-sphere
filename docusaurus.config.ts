@@ -95,11 +95,11 @@ const config: Config = {
           position: "left",
           label: "Hướng dẫn",
         },
-        {
-          to: "/showcase",
-          label: "Showcase",
-          position: "right",
-        },
+        // {
+        //   to: "/showcase",
+        //   label: "Showcase",
+        //   position: "right",
+        // },
         { to: "/blog", label: "Bài viết", position: "left" },
         {
           href: "https://github.com/ducbq1",
