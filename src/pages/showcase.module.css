@@ -1,0 +1,23 @@
+.showcaseCard {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.showcaseCard:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.showcaseCard img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  background: #fff;
+  padding: 1rem;
+}
+
+.tags {
+  margin-top: 0.5rem;
+}
